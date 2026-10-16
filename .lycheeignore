@@ -1,0 +1,2 @@
+# 对爬虫超时、但浏览器可正常访问的站点
+^https://www\.mckinsey\.com/
