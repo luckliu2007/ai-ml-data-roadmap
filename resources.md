@@ -81,6 +81,7 @@
 | --- | --- | --- | --- | --- |
 | [Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report) | 🧭 | 年度 AI 全景基线 | 英 | 免费 |
 | [McKinsey: The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) | 🧭 | 企业 AI 采用年度调查 | 英 | 免费 |
+| [State of AI Report 2026](https://www.stateof.ai/) | 🛠️ 🧭 | Air Street Capital 年度报告：研究、产业、政策、安全与下一年预测（2026-10） | 英 | 免费 |
 | [Microsoft Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index) | 🧭 | AI 与工作方式、组织变化 | 英 | 免费 |
 | [WEF Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) | 🧭 | 岗位与技能结构变化 | 英 | 免费 |
 | [Anthropic Economic Index](https://www.anthropic.com/economic-index) | 🧭 | 基于真实使用数据的 AI 职业影响 | 英 | 免费 |
