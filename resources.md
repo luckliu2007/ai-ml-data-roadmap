@@ -29,6 +29,7 @@
 | [Claude Code](https://github.com/anthropics/claude-code)（约 15 万星） | 🛠️ | Anthropic 的终端编程智能体 | 英 | 需订阅或 API |
 | [OpenAI Codex CLI](https://github.com/openai/codex)（约 13 万星） | 🛠️ | OpenAI 开源的终端编程智能体 | 英 | 需订阅或 API |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli)（约 11 万星） | 🛠️ | Google 开源的终端编程智能体 | 英 | 有免费额度 |
+| [Agent Skills（Addy Osmani）](https://github.com/addyosmani/agent-skills)（约 11 万星） | 🛠️ | 把规格→计划→实现→测试→评审→上线的工程流程写成编程智能体的 Skills 与命令 | 英 | 免费 |
 
 ## 知识库与 RAG
 
