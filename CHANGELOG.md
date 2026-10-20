@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2026-10-20
+
+- 资源总表“AI 编程智能体”新增 addyosmani/agent-skills（覆盖规格到上线的工程流程 Skills，已核实仍在更新）
+- radar-ignore 新增 2 个增长异常的候选
+
 ## 2026-10-19
 
 - 资源总表“趋势与产业报告”新增 State of AI Report 2026（Air Street Capital，2026-10 发布，已核实官网可访问）
