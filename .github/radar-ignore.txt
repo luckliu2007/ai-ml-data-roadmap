@@ -5,3 +5,5 @@ JuliusBrussee/caveman
 nexu-io/open-design
 affaan-m/ECC
 Graphify-Labs/graphify
+career-ops-hq/career-ops
+Panniantong/Agent-Reach

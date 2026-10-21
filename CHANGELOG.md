@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2026-10-21
+
+- 资源总表“智能体、工具与工作流”新增 DeepSeek Harness（DeepSeek 官方开源智能体框架，已核实官网 deepseek.com/harness 与仓库互相对应、仍在更新；星标增速异常，故不标星数）
+- radar-ignore 新增 2 个与主题无关或存在平台条款风险的候选
+
 ## 2026-10-20
 
 - 资源总表“AI 编程智能体”新增 addyosmani/agent-skills（覆盖规格到上线的工程流程 Skills，已核实仍在更新）
