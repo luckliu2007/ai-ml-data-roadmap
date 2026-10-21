@@ -74,6 +74,7 @@
 | [Google AI Essentials](https://grow.google/ai-essentials/) | 🧭 | 偏实操的 AI 入门 | 英 | 免费 |
 | [DeepLearning.AI 课程](https://www.deeplearning.ai/courses) | 🛠️ | 大量 1–2 小时专题短课 | 英 | 多数免费 |
 | [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)（约 12 万星） | 🛠️ | 微软 21 课 | 英 / 多语 | 免费 |
+| [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch)（约 7.2 万星） | 🛠️ | 20 个阶段 542 节课，从数学与 ML 基础、手写 Transformer 一路到 RAG、MCP、智能体运行时和评估，每课有可运行代码，配 [在线学习站](https://aiengineeringfromscratch.com/) | 英（README 有中文版） | 免费 |
 | [Claude Cookbooks](https://github.com/anthropics/claude-cookbooks)（约 5.3 万星） | 🛠️ | 官方可运行示例 | 英 | 免费 |
 | [llm-cookbook](https://github.com/datawhalechina/llm-cookbook)（约 2.5 万星） | 🛠️ | 吴恩达大模型系列课程中文版 | 中 | 免费 |
 

@@ -7,3 +7,9 @@ affaan-m/ECC
 Graphify-Labs/graphify
 career-ops-hq/career-ops
 Panniantong/Agent-Reach
+stablyai/orca
+tt-a1i/archify
+Leonxlnx/taste-skill
+farion1231/cc-switch
+diegosouzapw/OmniRoute
+paperclipai/paperclip
