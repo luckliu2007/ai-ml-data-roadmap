@@ -49,6 +49,7 @@
 | [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners)（约 1.7 万星） | 🛠️ | 微软 MCP 入门课程，多语言示例 | 英 / 多语 | 免费 |
 | [Agent Skills](https://github.com/anthropics/skills)（约 18 万星） | 🛠️ | 智能体能力包的官方示例与规范 | 英 | 免费 |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python)（约 3 万星） | 🛠️ | 轻量多智能体框架 | 英 | 开源 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（[官网](https://deepseek.com/harness/)） | 🛠️ | DeepSeek 官方开源的智能体框架（agent harness），“一切皆插件”架构，`npx @deepseek-ai/dsh web` 启动本地 Web UI；仍是开发者预览版，会有不兼容变更，运行前先读其 SAFETY.md | 英 / 中 | 开源 |
 | [hello-agents](https://github.com/datawhalechina/hello-agents)（约 8 万星） | 🛠️ | 《从零开始构建智能体》中文教程 | 中 | 免费 |
 | [n8n](https://github.com/n8n-io/n8n)（约 21 万星） | 🛠️ | 可视化工作流自动化，内置 AI 节点 | 英 | 可自托管 |
 | [Dify](https://github.com/langgenius/dify)（约 16 万星） | 🛠️ | 开源 LLM 应用开发平台：工作流、RAG、智能体 | 英 / 中 | 可自托管 |
