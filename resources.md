@@ -63,6 +63,7 @@
 | [Hamel Husain: Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) | 🛠️ 🧭 | 为什么评估是 AI 产品的核心 | 英 | 免费 |
 | [Google PAIR People + AI Guidebook](https://pair.withgoogle.com/guidebook/) | 🛠️ | AI 产品体验设计方法 | 英 | 免费 |
 | [Microsoft Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) | 🛠️ | 18 条人机交互设计准则 | 英 | 免费 |
+| [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | 🛠️ 🧭 | 大模型应用十大安全风险与防护（提示注入、敏感信息泄露、过度授权等） | 英 | 免费 |
 | Chip Huyen《AI Engineering》（[作者页](https://huyenchip.com/books/) · [资源仓库](https://github.com/chiphuyen/aie-book)） | 🛠️ | AI 应用工程最系统的一本书：评估、提示、RAG、智能体、微调、部署 | 英 | 书籍付费 |
 
 ## 课程

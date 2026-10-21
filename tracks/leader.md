@@ -94,6 +94,7 @@
 - [NIST AI 600-1 生成式 AI 配置文件](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence)：生成式 AI 特有的 12 类风险及对应措施。
 - [ISO/IEC 42001](https://www.iso.org/standard/42001)：全球首个可认证的 AI 管理体系标准。
 - [OECD.AI 政策观察站](https://oecd.ai/)：各国 AI 政策和原则对比。
+- [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)：大模型应用的十大安全风险。管理者不必懂技术细节，但应要求技术团队逐条说明防护措施。
 
 **法规**
 - 中国：《[生成式人工智能服务管理暂行办法](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)》（2023-08-15 施行）、《[人工智能生成合成内容标识办法](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm)》（2025-09-01 施行，要求对 AI 生成内容做显式和隐式标识）。

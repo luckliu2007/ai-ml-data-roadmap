@@ -49,6 +49,10 @@
 | 6 | 评估驱动的产品化 | 投资、度量与 AI 战略 |
 | 毕业 | 上线一个有评估集的 AI 应用 | 一份 AI 战略备忘录 + 用例组合 |
 
+## 路线图
+
+下一步的补强方向和维护机制见 [ROADMAP.md](ROADMAP.md)。
+
 ## 维护
 
 - 链接由 [Link Check](.github/workflows/link-check.yml) 每周一自动检查。
