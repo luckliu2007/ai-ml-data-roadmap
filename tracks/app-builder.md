@@ -119,12 +119,13 @@
   5. 能用代码断言的就不用“大模型当裁判”，用了也要对照人工标注校准。
 - [Google PAIR People + AI Guidebook](https://pair.withgoogle.com/guidebook/)：AI 产品的用户体验设计方法（信任、可解释、出错处理）。
 - [Microsoft Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/)：18 条经过研究验证的人机交互设计准则。
+- [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)：大模型应用最常见的 10 类安全风险（提示注入、敏感信息泄露、过度授权的智能体等）及防护措施。上线前逐条自查。
 - Chip Huyen《[AI Engineering](https://huyenchip.com/books/)》第 3–4 章（评估方法论）。
 
 🛠️ 动手
 - 给模块 4 或 5 的产出建一个 ≥50 条的评估集（用 [评估计划模板](../templates/eval-plan.md)），跑一轮基线。
 - 做一轮错误分析 → 改进 → 重跑，记录通过率变化。
-- 补齐产品化清单：成本估算、延迟、失败兜底、敏感信息处理、用户反馈入口。
+- 补齐产品化清单：成本估算、延迟、失败兜底、敏感信息处理、用户反馈入口；对照 OWASP LLM Top 10 做一次安全自查（重点：提示注入、工具权限、输出中的敏感信息）。
 
 📦 产出：评估集 + 两轮迭代的结果对比 + 一页上线检查清单。
 
