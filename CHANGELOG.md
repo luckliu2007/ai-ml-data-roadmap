@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2026-10-21（二）
+
+- 资源总表“课程”新增 AI Engineering from Scratch（rohitg00，MIT，20 阶段 542 节可运行课程，已核实 2026-10 仍在更新）
+- radar-ignore 新增 6 个工具/产品类候选（编程智能体周边工具、AI 网关、智能体编排平台）
+
 ## 2026-10-21
 
 - 资源总表“智能体、工具与工作流”新增 DeepSeek Harness（DeepSeek 官方开源智能体框架，已核实官网 deepseek.com/harness 与仓库互相对应、仍在更新；星标增速异常，故不标星数）
