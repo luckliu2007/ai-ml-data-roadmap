@@ -13,3 +13,10 @@ Leonxlnx/taste-skill
 farion1231/cc-switch
 diegosouzapw/OmniRoute
 paperclipai/paperclip
+cheaper-inference/OmniRoute
+cathrynlavery/diagram-design
+koala73/worldmonitor
+heygen-com/hyperframes
+alibaba/open-code-review
+MemPalace/mempalace
+ai-job-search-dev/ai-job-search
