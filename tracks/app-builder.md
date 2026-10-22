@@ -146,6 +146,21 @@
 
 ✅ 自测：别人问“这个 AI 功能效果怎么样”时，你能拿出数字，并说清这些数字怎么来的。
 
+### 进阶（上线前必做）：安全实践与红队测试
+
+评估回答“效果好不好”，安全测试回答“会不会被人故意弄坏”。上线前至少做一轮：
+
+| 步骤 | 资源 | 做什么 |
+| --- | --- | --- |
+| 1. 了解攻击面 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)、[NIST AI 100-2 E2025 对抗性机器学习分类](https://csrc.nist.gov/pubs/ai/100/2/e2025/final)、[MITRE ATLAS](https://atlas.mitre.org/) | 弄清提示注入、越狱、数据泄露、模型投毒等攻击方式分别是什么 |
+| 2. 按官方指南加防护 | [Anthropic：缓解越狱与提示注入](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks)、[OpenAI：安全最佳实践](https://developers.openai.com/api/docs/guides/safety-best-practices)、[Google SAIF](https://saif.google/) | 输入过滤、输出审核、把外部内容和系统指令隔开、最小工具权限、人工复核 |
+| 3. 自动化红队测试 | [promptfoo](https://github.com/promptfoo/promptfoo)（约 2.6 万星）、[garak](https://github.com/NVIDIA/garak)（NVIDIA，约 1 万星）、[PyRIT](https://github.com/microsoft/PyRIT)（微软）、[Inspect](https://github.com/UKGovernmentBEIS/inspect_ai)（英国 AI 安全研究所） | 用开源工具批量生成攻击样本，跑出失败案例，补进评估集 |
+| 4. 学习红队方法 | [Microsoft AI Red Team](https://learn.microsoft.com/en-us/security/ai-red-team/) | 微软 AI 红队公开的方法、培训材料和经验总结 |
+
+⚠️ 只测试你自己的应用或已获授权的系统。
+
+📦 产出（追加）：一份安全测试记录，包括测了哪些攻击类型、发现了什么、怎么修的，以及修复后重跑的结果。
+
 ---
 
 ## 毕业项目（第 12 周）
