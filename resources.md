@@ -72,6 +72,21 @@
 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | 🛠️ 🧭 | 大模型应用十大安全风险与防护（提示注入、敏感信息泄露、过度授权等） | 英 | 免费 |
 | Chip Huyen《AI Engineering》（[作者页](https://huyenchip.com/books/) · [资源仓库](https://github.com/chiphuyen/aie-book)） | 🛠️ | AI 应用工程最系统的一本书：评估、提示、RAG、智能体、微调、部署 | 英 | 书籍付费 |
 
+## 安全与红队测试
+
+| 资源 | 路线 | 说明 | 语言 | 费用 |
+| --- | --- | --- | --- | --- |
+| [NIST AI 100-2 E2025](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) | 🛠️ 🧭 | 对抗性机器学习攻击与防护的分类和术语 | 英 | 免费 |
+| [MITRE ATLAS](https://atlas.mitre.org/) | 🛠️ | 针对 AI 系统的攻击战术与技术知识库 | 英 | 免费 |
+| [Anthropic：缓解越狱与提示注入](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks) | 🛠️ | 官方防护指南 | 英 | 免费 |
+| [OpenAI：Safety best practices](https://developers.openai.com/api/docs/guides/safety-best-practices) | 🛠️ | 官方安全最佳实践 | 英 | 免费 |
+| [Google SAIF](https://saif.google/) | 🛠️ 🧭 | Google 的安全 AI 框架 | 英 | 免费 |
+| [Microsoft AI Red Team](https://learn.microsoft.com/en-us/security/ai-red-team/) | 🛠️ | 微软 AI 红队的方法与培训材料 | 英 | 免费 |
+| [promptfoo](https://github.com/promptfoo/promptfoo)（约 2.6 万星） | 🛠️ | 开源评估与红队测试工具 | 英 | 开源 |
+| [garak](https://github.com/NVIDIA/garak)（约 1 万星） | 🛠️ | NVIDIA 开源的大模型漏洞扫描器 | 英 | 开源 |
+| [PyRIT](https://github.com/microsoft/PyRIT) | 🛠️ | 微软开源的生成式 AI 风险识别工具 | 英 | 开源 |
+| [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) | 🛠️ | 英国 AI 安全研究所开源的模型评估框架 | 英 | 开源 |
+
 ## 课程
 
 | 资源 | 路线 | 说明 | 语言 | 费用 |
@@ -106,6 +121,14 @@
 | [OpenAI: AI in the Enterprise](https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf) | 🧭 | 七家企业的七条落地经验 | 英 | 免费 |
 | [MIT NANDA: The GenAI Divide（Fortune 报道）](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/) | 🧭 | 试点为什么难以产生回报（初步研究，谨慎引用） | 英 | 免费 |
 
+## 行业落地案例
+
+| 资源 | 路线 | 说明 | 语言 | 费用 |
+| --- | --- | --- | --- | --- |
+| [WEF 全球灯塔网络](https://initiatives.weforum.org/global-lighthouse-network/home) | 🧭 | 智能制造标杆工厂的公开用例与成效 | 英 | 免费 |
+| [Artificial intelligence in UK financial services 2024](https://www.bankofengland.co.uk/report/2024/artificial-intelligence-in-uk-financial-services-2024) | 🧭 | 英格兰银行与 FCA 对金融业 AI 应用的调查 | 英 | 免费 |
+| [Google Cloud 真实生成式 AI 用例汇编](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders) | 🧭 | 按行业列出的具名企业用例（厂商整理，数字需自行核实） | 英 | 免费 |
+
 ## 治理与合规
 
 | 资源 | 路线 | 说明 | 语言 | 费用 |
@@ -117,6 +140,8 @@
 | [OECD.AI](https://oecd.ai/) | 🧭 | 各国 AI 政策观察 | 英 | 免费 |
 | [生成式人工智能服务管理暂行办法](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm) | 🧭 | 中国生成式 AI 服务基本规则（2023-08-15 施行） | 中 | 免费 |
 | [人工智能生成合成内容标识办法](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) | 🧭 | AI 生成内容标识要求（2025-09-01 施行） | 中 | 免费 |
+| [人工智能安全治理框架 2.0 版](https://www.cac.gov.cn/2025-09/15/c_1759653448369123.htm) | 🧭 | 国内 AI 风险分类、分级治理与技术措施（2025-09） | 中 | 免费 |
+| [国务院关于深入实施“人工智能+”行动的意见](https://www.gov.cn/zhengce/content/202508/content_7037861.htm) | 🧭 | 国家推动 AI 与各行业融合的六大重点行动（国发〔2025〕11 号） | 中 | 免费 |
 
 ## 收录与淘汰原则
 

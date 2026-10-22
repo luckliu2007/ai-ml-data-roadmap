@@ -1,5 +1,12 @@
 # 更新日志
 
+## 2026-10-22 · 安全实践、行业案例、中文一手资料（ROADMAP 全部完成）
+
+- 应用路线模块 6 新增“安全实践与红队测试”：攻击面（OWASP、NIST AI 100-2 E2025、MITRE ATLAS）、官方防护指南（Anthropic、OpenAI、Google SAIF）、开源红队工具（promptfoo、garak、PyRIT、Inspect）、Microsoft AI Red Team
+- 管理者路线模块 3 新增行业案例：WEF 全球灯塔网络、英格兰银行与 FCA 金融业 AI 调查、Google Cloud 用例汇编（注明厂商来源）
+- 管理者路线模块 2、5 新增中文一手资料：“人工智能+”行动意见、《人工智能安全治理框架》2.0 版
+- 资源总表新增“安全与红队测试”“行业落地案例”两节
+
 ## 2026-10-22 · 语音与电脑操作智能体
 
 - 应用路线模块 5 新增进阶小节“语音与电脑操作智能体”：OpenAI Realtime、Gemini Live、Pipecat、LiveKit Agents、Claude Computer use、browser-use，并附这类智能体的安全要点

@@ -38,6 +38,7 @@
 - [WEF Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/)：技能与岗位的结构性变化。
 - [Anthropic Economic Index](https://www.anthropic.com/economic-index)：基于真实使用数据，看 AI 被用在哪些职业任务上。
 - 行业样例（工程建设）：McKinsey《[How AI is reshaping the future of the AEC industry](https://www.mckinsey.com/industries/engineering-construction-and-building-materials/our-insights/how-ai-is-reshaping-the-future-of-the-aec-industry)》（2026-07）。
+- 中文一手资料：《[国务院关于深入实施“人工智能+”行动的意见](https://www.gov.cn/zhengce/content/202508/content_7037861.htm)》（国发〔2025〕11 号），国家推动 AI 与各行业融合的六大重点行动，看自己所在行业对应哪一项、有哪些可对接的政策和场景。
 
 🛠️ 动手
 - 把你所在行业的价值链画成 5–8 个环节，对每个环节标注：AI 可替代的任务比例（高 / 中 / 低）、数据是否可得、竞争对手是否已在用。
@@ -55,6 +56,10 @@
 📖 必读
 - OpenAI《[Identifying and scaling AI use cases](https://cdn.openai.com/business-guides-and-resources/identifying-and-scaling-ai-use-cases.pdf)》：基于 600 多个客户用例，把企业用例归纳为六类基本能力：内容创作、自动化、研究、编程、数据分析、构思与策略。建议从三类工作场景里找机会：重复性的低价值任务、技能瓶颈、需要在模糊信息中做判断的工作。
 - McKinsey AEC 报告（见模块 2）中的观点：围绕端到端的“业务域”重构，而不是零散地加用例。
+- 行业落地案例（找对标时用）：
+  - 制造：[WEF 全球灯塔网络](https://initiatives.weforum.org/global-lighthouse-network/home)，世界经济论坛评选的智能制造标杆工厂，公开每家的关键用例和量化成效；2026 年新入选名单以 AI 应用为主。
+  - 金融：[英格兰银行与 FCA《Artificial intelligence in UK financial services 2024》](https://www.bankofengland.co.uk/report/2024/artificial-intelligence-in-uk-financial-services-2024)，监管机构对金融业 AI 应用的调查，涵盖用例、收益、风险和治理。
+  - 跨行业：[Google Cloud 真实生成式 AI 用例汇编](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders)，按行业列出具名企业的用例。这是厂商整理的客户案例，适合找灵感，效果数字需自行核实。
 
 🛠️ 动手
 - 和 3 个一线团队各开一次 1 小时工作坊，收集 ≥15 个用例。
@@ -95,6 +100,7 @@
 - [ISO/IEC 42001](https://www.iso.org/standard/42001)：全球首个可认证的 AI 管理体系标准。
 - [OECD.AI 政策观察站](https://oecd.ai/)：各国 AI 政策和原则对比。
 - [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)：大模型应用的十大安全风险。管理者不必懂技术细节，但应要求技术团队逐条说明防护措施。
+- [《人工智能安全治理框架》2.0 版](https://www.cac.gov.cn/2025-09/15/c_1759653448369123.htm)（2025-09 发布）：国家网信办指导、全国网安标委发布的技术文件，梳理 AI 风险分类，提出分级治理原则和全生命周期的技术治理措施，是国内企业做 AI 风险管理最直接的参照。
 
 **法规**
 - 中国：《[生成式人工智能服务管理暂行办法](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)》（2023-08-15 施行）、《[人工智能生成合成内容标识办法](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm)》（2025-09-01 施行，要求对 AI 生成内容做显式和隐式标识）。
