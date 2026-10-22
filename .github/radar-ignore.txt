@@ -20,3 +20,4 @@ heygen-com/hyperframes
 alibaba/open-code-review
 MemPalace/mempalace
 ai-job-search-dev/ai-job-search
+NousResearch/hermes-agent

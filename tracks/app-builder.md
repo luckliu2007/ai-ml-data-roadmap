@@ -104,6 +104,21 @@
 
 ✅ 自测：能对一个需求判断“用工作流就够了”还是“需要智能体”，并说出理由。
 
+### 进阶（可选）：语音与电脑操作智能体
+
+文字智能体做顺之后，可以往两个方向扩展：**实时语音**（电话客服、口语陪练、会议助手）和**操作电脑 / 浏览器**（自动填表、跨系统搬运数据）。
+
+| 方向 | 资源 | 说明 |
+| --- | --- | --- |
+| 实时语音 | [OpenAI Realtime API 指南](https://developers.openai.com/api/docs/guides/realtime)、[Gemini Live API](https://ai.google.dev/gemini-api/docs/live-api) | 官方文档：低延迟的语音进、语音出，支持打断和工具调用 |
+| 实时语音 | [Pipecat](https://github.com/pipecat-ai/pipecat)（约 1.7 万星）、[LiveKit Agents](https://github.com/livekit/agents)（约 1.5 万星） | 开源框架：把语音识别、大模型、语音合成和电话 / WebRTC 串成可上线的语音智能体 |
+| 操作电脑 | [Claude Computer use 工具文档](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) | 官方文档：让模型看屏幕截图、移动鼠标、敲键盘 |
+| 操作浏览器 | [browser-use](https://github.com/browser-use/browser-use)（约 12 万星） | 开源库：让智能体打开网页、点击、填表、提取信息 |
+
+⚠️ **这类智能体的风险明显更高**：
+- 语音会带来误识别和身份冒用问题。涉及转账、改密码等敏感操作时，一律要求二次确认或转人工。
+- 操作电脑和浏览器的智能体会读取网页内容，而网页里可能藏着恶意指令（提示注入）。务必放在隔离的虚拟机或沙盒里运行，只给完成任务所需的最小权限，对照 [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) 自查。
+
 ---
 
 ## 模块 6 · 评估驱动的产品化（第 10–11 周）

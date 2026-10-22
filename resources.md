@@ -54,6 +54,12 @@
 | [n8n](https://github.com/n8n-io/n8n)（约 21 万星） | 🛠️ | 可视化工作流自动化，内置 AI 节点 | 英 | 可自托管 |
 | [Dify](https://github.com/langgenius/dify)（约 16 万星） | 🛠️ | 开源 LLM 应用开发平台：工作流、RAG、智能体 | 英 / 中 | 可自托管 |
 | [Coze Studio](https://github.com/coze-dev/coze-studio)（约 2.2 万星） | 🛠️ | 字节跳动扣子开源版，可视化搭建智能体 | 中 / 英 | 开源 |
+| [OpenAI Realtime API 指南](https://developers.openai.com/api/docs/guides/realtime) | 🛠️ | 实时语音智能体官方文档 | 英 | 免费（API 按量付费） |
+| [Gemini Live API](https://ai.google.dev/gemini-api/docs/live-api) | 🛠️ | 实时语音 / 视频交互官方文档 | 英 | 免费（API 按量付费） |
+| [Pipecat](https://github.com/pipecat-ai/pipecat)（约 1.7 万星） | 🛠️ | 开源实时语音与多模态智能体框架 | 英 | 开源 |
+| [LiveKit Agents](https://github.com/livekit/agents)（约 1.5 万星） | 🛠️ | 开源实时语音智能体框架，支持 WebRTC 与电话 | 英 | 开源 |
+| [Claude Computer use 工具文档](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) | 🛠️ | 让模型操作电脑的官方文档 | 英 | 免费（API 按量付费） |
+| [browser-use](https://github.com/browser-use/browser-use)（约 12 万星） | 🛠️ | 让智能体操作浏览器的开源库 | 英 | 开源 |
 
 ## 评估与产品化
 

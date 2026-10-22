@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2026-10-22 · 语音与电脑操作智能体
+
+- 应用路线模块 5 新增进阶小节“语音与电脑操作智能体”：OpenAI Realtime、Gemini Live、Pipecat、LiveKit Agents、Claude Computer use、browser-use，并附这类智能体的安全要点
+- 资源总表同步新增 6 项；雷达配置增加主题关键词过滤；radar-ignore 加入 NousResearch/hermes-agent（通用个人智能体产品，与课程模块无对应）
+
 ## 2026-10-22
 
 - radar-ignore 新增 7 个工具/产品类候选（AI 网关、绘图 Skill、情报看板、视频渲染、代码评审工具、记忆系统、求职框架）；其中 OmniRoute、ai-job-search 是已忽略项目转移 owner 后的新地址
