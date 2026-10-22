@@ -1,10 +1,45 @@
 {
   "theme": "AI 应用构建者与管理者：提示与上下文工程、AI 编程智能体、RAG、智能体/MCP/Skills、评估、AI 战略与治理",
   "self_owner": "luckliu2007",
-  "queries": ["topic:ai-agents", "topic:mcp", "topic:rag", "topic:llm-evaluation", "topic:prompt-engineering", "topic:agent-skills", "topic:context-engineering"],
+  "queries": [
+    "topic:ai-agents",
+    "topic:mcp",
+    "topic:rag",
+    "topic:llm-evaluation",
+    "topic:prompt-engineering",
+    "topic:agent-skills",
+    "topic:context-engineering"
+  ],
   "min_stars": 3000,
   "pushed_within_days": 30,
   "max_age_days": 730,
   "stale_days": 540,
-  "top_n": 8
+  "top_n": 8,
+  "require_keywords": [
+    "course",
+    "tutorial",
+    "guide",
+    "handbook",
+    "cookbook",
+    "roadmap",
+    "learn",
+    "curriculum",
+    "book",
+    "from scratch",
+    "from-scratch",
+    "best practice",
+    "best-practice",
+    "eval",
+    "benchmark",
+    "prompt engineering",
+    "prompt-engineering",
+    "context engineering",
+    "context-engineering",
+    "examples",
+    "教程",
+    "课程",
+    "指南",
+    "从零",
+    "最佳实践"
+  ]
 }
