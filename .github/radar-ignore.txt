@@ -21,3 +21,10 @@ alibaba/open-code-review
 MemPalace/mempalace
 ai-job-search-dev/ai-job-search
 NousResearch/hermes-agent
+headroomlabs-ai/headroom
+Imbad0202/academic-research-skills
+blader/humanizer
+virgiliojr94/book-to-skill
+freestylefly/awesome-gpt-image-2
+shanraisshan/claude-code-best-practice
+ifixai-ai/iFixAi
