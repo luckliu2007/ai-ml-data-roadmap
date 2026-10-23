@@ -1,8 +1,24 @@
 # 资源总表
 
-**核实日期：2026-10-16。** GitHub 项目均通过 GitHub API 确认未归档、近期有更新，星标数四舍五入。网页资源均已实际访问确认。
+**核实日期：2026-10-23。** GitHub 项目均通过 GitHub API 确认未归档、近期有更新，星标数四舍五入。网页资源均已实际访问确认。
 
 图例 · 路线：🛠️ 应用构建者 · 🧭 管理者　语言：英 / 中　费用：免费 / 部分免费 / 付费
+
+## 2026 新标准与工程实践
+
+| 资源 | 路线 | 说明 | 语言 | 费用 |
+| --- | --- | --- | --- | --- |
+| [2026 AI 最佳实践（本仓库）](best-practices-2026.md) | 🛠️ 🧭 | 2026 技术态势 + 构建者 9 条 + 管理者 8 条最佳实践 + 90 天计划 | 中 | 免费 |
+| [Agentic AI Foundation（AAIF）](https://aaif.io/) | 🛠️ 🧭 | Linux 基金会旗下，托管 MCP、AGENTS.md、goose 等智能体开放标准（2025-12 成立） | 英 | 免费 |
+| [MCP 2026-07-28 规范变更说明](https://modelcontextprotocol.io/specification/2026-07-28/changelog) | 🛠️ | 无状态核心、发现机制、Tasks 扩展、MCP Apps、授权加固 | 英 | 免费 |
+| [A2A 协议](https://a2a-protocol.org/) | 🛠️ | 智能体之间互相发现和协作的开放协议 | 英 | 免费 |
+| [Agent Skills 规范](https://agentskills.io/) | 🛠️ | 把指令、脚本和资源打包成可跨产品复用的能力 | 英 | 免费 |
+| [AGENTS.md](https://agents.md/) | 🛠️ | 写给编程智能体的项目说明文件格式 | 英 | 免费 |
+| [Anthropic：Writing effective tools for AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | 🛠️ | 智能体工具设计原则 | 英 | 免费 |
+| [Anthropic：Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | 🛠️ | 跨多个上下文窗口的长任务运行框架 | 英 | 免费 |
+| [Anthropic：Harness design for long-running apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) | 🛠️ | 长时应用开发的运行框架设计 | 英 | 免费 |
+| [Anthropic：Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | 🛠️ | 智能体评估方法 | 英 | 免费 |
+| [Anthropic：How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | 🛠️ | 多智能体系统的设计与经验 | 英 | 免费 |
 
 ## 模型选型
 
@@ -78,6 +94,7 @@
 | 资源 | 路线 | 说明 | 语言 | 费用 |
 | --- | --- | --- | --- | --- |
 | [NIST AI 100-2 E2025](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) | 🛠️ 🧭 | 对抗性机器学习攻击与防护的分类和术语 | 英 | 免费 |
+| [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 🛠️ 🧭 | 智能体应用十大安全风险（2025-12 发布） | 英 | 免费 |
 | [MITRE ATLAS](https://atlas.mitre.org/) | 🛠️ | 针对 AI 系统的攻击战术与技术知识库 | 英 | 免费 |
 | [Anthropic：缓解越狱与提示注入](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks) | 🛠️ | 官方防护指南 | 英 | 免费 |
 | [OpenAI：Safety best practices](https://developers.openai.com/api/docs/guides/safety-best-practices) | 🛠️ | 官方安全最佳实践 | 英 | 免费 |
@@ -106,9 +123,11 @@
 | 资源 | 路线 | 说明 | 语言 | 费用 |
 | --- | --- | --- | --- | --- |
 | [Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report) | 🧭 | 年度 AI 全景基线 | 英 | 免费 |
+| [BCG：AI Is Starting to Pay Off](https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value) | 🧭 | 2026 年 AI 价值分布、领先企业做法、智能体管控缺口 | 英 | 免费 |
+| [Deloitte State of AI in the Enterprise 2026](https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html) | 🧭 | 试点到生产、智能体治理、主权 AI | 英 | 免费 |
 | [McKinsey: The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) | 🧭 | 企业 AI 采用年度调查 | 英 | 免费 |
 | [State of AI Report 2026](https://www.stateof.ai/) | 🛠️ 🧭 | Air Street Capital 年度报告：研究、产业、政策、安全与下一年预测（2026-10） | 英 | 免费 |
-| [Microsoft Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index) | 🧭 | AI 与工作方式、组织变化 | 英 | 免费 |
+| [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization) | 🧭 | 智能体时代的组织与工作方式（2026） | 英 | 免费 |
 | [WEF Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) | 🧭 | 岗位与技能结构变化 | 英 | 免费 |
 | [Anthropic Economic Index](https://www.anthropic.com/economic-index) | 🧭 | 基于真实使用数据的 AI 职业影响 | 英 | 免费 |
 | [One Useful Thing](https://www.oneusefulthing.org/) | 🧭 | Ethan Mollick 的 AI 实践博客 | 英 | 免费 |

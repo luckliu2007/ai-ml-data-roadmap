@@ -10,12 +10,12 @@
 | 2 | **概率生成与幻觉** | 模型是在预测“最可能的下一段文字”，不是在查数据库 | 以为换个更强的模型幻觉就会消失；关键事实必须有来源核对 |
 | 3 | **模型 ≠ 产品** | 模型只是引擎，产品价值来自数据、流程、界面和反馈闭环 | 把“接入了某某大模型”当成竞争力 |
 | 4 | **上下文工程** | 在每一步给模型恰好够用的信息：指令、示例、检索到的资料、工具结果、记忆 | 只调提示词措辞，不管信息从哪来、何时给 |
-| 5 | **工作流 vs 智能体** | 步骤固定用工作流，步骤需要模型自己决定才用智能体 | 什么都想做成“全自动智能体”，结果不可控、难调试 |
-| 6 | **工具调用与 MCP** | 模型通过工具读写外部系统；MCP 是让工具“一次接入、到处可用”的开放协议 | 以为接上工具就安全；工具权限就是 AI 的权限边界 |
+| 5 | **工作流 vs 智能体** | 步骤固定用工作流，步骤需要模型自己决定才用智能体；长任务还要在外面配一层“运行框架”（任务拆分、进度记录、自我验证） | 什么都想做成“全自动智能体”，结果不可控、难调试 |
+| 6 | **工具调用与开放标准** | 模型通过工具读写外部系统。MCP 让工具“一次接入、到处可用”，Agent Skills 打包做事方法，AGENTS.md 给编程智能体写项目说明；这些标准现由 Linux 基金会旗下的 AAIF 托管 | 以为接上工具就安全；工具权限就是 AI 的权限边界 |
 | 7 | **评估（Evals）** | 用真实样本和明确标准持续衡量效果，是改进和决策的唯一可靠依据 | 凭几次演示的“感觉”判断好坏 |
 | 8 | **质量 / 成本 / 延迟三角** | 更强的模型更贵更慢，产品设计就是在三者间找平衡 | 默认所有任务都用最强模型 |
 
-> 延伸阅读：概念 4 见 Anthropic《[Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)》；概念 5 见 Anthropic《[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)》；概念 7 见 Hamel Husain《[LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/)》。
+> 延伸阅读：概念 4 见 Anthropic《[Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)》；概念 5 见 Anthropic《[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)》；概念 7 见 Hamel Husain《[LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/)》。2026 年的最新做法汇总见 [2026 AI 最佳实践](best-practices-2026.md)。
 
 ## 二、四级能力标准
 
