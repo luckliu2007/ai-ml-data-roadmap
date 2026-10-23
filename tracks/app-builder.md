@@ -52,11 +52,13 @@
 
 📖 必读
 - Anthropic《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》：先探索、再计划、再编码、再验证的工作流，适用于所有编程智能体。
+- [AGENTS.md](https://agents.md/)：写给编程智能体看的项目说明文件（开放格式，现由 AAIF 托管）：项目结构、构建和测试命令、代码规范。不管用哪家编程智能体，每个仓库都应该有一份。
 - 主流开源 / 官方编程智能体，任选一个上手：[Claude Code](https://github.com/anthropics/claude-code)、[OpenAI Codex CLI](https://github.com/openai/codex)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)。
 
 🛠️ 动手
 - 做一个解决自己真实痛点的小工具，例如：批量整理文件、把 Excel 生成周报、一个内部查询网页。
 - 刻意练习：先让智能体写计划，你审核后再执行；让它先写测试；每次只改一件事。
+- 给这个小工具的仓库写一份 AGENTS.md，再让智能体按它工作，对比有没有这份说明时的差别。
 
 📦 产出：一个放在 GitHub 上的可运行小工具，README 写清楚用途、运行方式，以及“哪些部分 AI 写、哪些部分我改”。
 
@@ -91,8 +93,10 @@
 - Anthropic《[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)》：最被广泛引用的智能体设计文章，提炼出提示链、路由、并行、编排者-执行者、评估者-优化者五种工作流模式，核心建议是“能用简单方案就别上智能体”。
 - OpenAI《[A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)》：从选模型、定义工具、写指令到护栏设计的实操指南。
 - [12-Factor Agents](https://github.com/humanlayer/12-factor-agents)：把智能体做成可靠软件的 12 条原则。
-- [MCP 官方文档](https://modelcontextprotocol.io/) + [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners)（微软，多语言示例）。
-- [Agent Skills](https://github.com/anthropics/skills)：把指令、脚本和资源打包成智能体可按需加载的能力。
+- Anthropic《[Writing effective tools for AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents)》：工具少而精、按工作流设计、返回高信号信息、把工具描述当提示词来写。
+- Anthropic《[Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)》：长任务智能体的运行框架：功能清单、进度文件、一次只做一个功能、端到端验证后才算完成。
+- [MCP 官方文档](https://modelcontextprotocol.io/) + [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners)（微软，多语言示例）。按 [2026-07-28 版规范](https://modelcontextprotocol.io/specification/2026-07-28/changelog)开发：这一版改为无状态核心，旧的 HTTP+SSE 传输已弃用。多个智能体之间互相调用，看 [A2A 协议](https://a2a-protocol.org/)。
+- [Agent Skills](https://github.com/anthropics/skills)：把指令、脚本和资源打包成智能体可按需加载的能力。格式已发布为开放标准，见 [agentskills.io](https://agentskills.io/)。
 - 中文系统教程：[hello-agents《从零开始构建智能体》](https://github.com/datawhalechina/hello-agents)。
 
 🛠️ 动手（三选一，建议都试）
@@ -127,6 +131,7 @@
 
 📖 必读
 - Hamel Husain《[LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/)》+《[Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/)》。核心方法：
+- Anthropic《[Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)》：智能体评估的专门方法：评最终结果而不是死卡步骤，正反例平衡，多次运行看 pass@k 和 pass^k，能力评估和回归评估分开，一定要读轨迹。
   1. 先亲自读 20–50 条真实记录做**错误分析**，再写自动化检查；
   2. 失败类型从数据中归纳，不预先拍脑袋定指标；
   3. 用**通过 / 不通过**的二元判断，而不是 1–5 分；
@@ -152,7 +157,7 @@
 
 | 步骤 | 资源 | 做什么 |
 | --- | --- | --- |
-| 1. 了解攻击面 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)、[NIST AI 100-2 E2025 对抗性机器学习分类](https://csrc.nist.gov/pubs/ai/100/2/e2025/final)、[MITRE ATLAS](https://atlas.mitre.org/) | 弄清提示注入、越狱、数据泄露、模型投毒等攻击方式分别是什么 |
+| 1. 了解攻击面 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)、[OWASP 智能体应用十大风险（2026）](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)、[NIST AI 100-2 E2025 对抗性机器学习分类](https://csrc.nist.gov/pubs/ai/100/2/e2025/final)、[MITRE ATLAS](https://atlas.mitre.org/) | 弄清提示注入、越狱、数据泄露、模型投毒等攻击方式分别是什么 |
 | 2. 按官方指南加防护 | [Anthropic：缓解越狱与提示注入](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks)、[OpenAI：安全最佳实践](https://developers.openai.com/api/docs/guides/safety-best-practices)、[Google SAIF](https://saif.google/) | 输入过滤、输出审核、把外部内容和系统指令隔开、最小工具权限、人工复核 |
 | 3. 自动化红队测试 | [promptfoo](https://github.com/promptfoo/promptfoo)（约 2.6 万星）、[garak](https://github.com/NVIDIA/garak)（NVIDIA，约 1 万星）、[PyRIT](https://github.com/microsoft/PyRIT)（微软）、[Inspect](https://github.com/UKGovernmentBEIS/inspect_ai)（英国 AI 安全研究所） | 用开源工具批量生成攻击样本，跑出失败案例，补进评估集 |
 | 4. 学习红队方法 | [Microsoft AI Red Team](https://learn.microsoft.com/en-us/security/ai-red-team/) | 微软 AI 红队公开的方法、培训材料和经验总结 |
@@ -162,6 +167,8 @@
 📦 产出（追加）：一份安全测试记录，包括测了哪些攻击类型、发现了什么、怎么修的，以及修复后重跑的结果。
 
 ---
+
+> 2026 年构建者最佳实践的完整清单（工具设计、上下文、运行框架、智能体评估、开放标准、安全、可观测、成本）见 [2026 AI 最佳实践](../best-practices-2026.md#二技术最佳实践给构建者)。
 
 ## 毕业项目（第 12 周）
 

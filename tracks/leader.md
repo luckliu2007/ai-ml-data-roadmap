@@ -33,8 +33,11 @@
 
 📖 必读（年度基线报告，读执行摘要即可）
 - [Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report)：技术进展、投资、采用、政策的年度基线（2026-04 发布）。
+- [BCG：AI Is Starting to Pay Off（2026-09-30）](https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value)：1,330 位高管的调查。只有 7.5% 的企业属于“面向未来型”，财务表现远超落后者；另有 41% 正在规模化。智能体预计到 2030 年贡献约 40% 的 AI 价值。
+- [Deloitte State of AI in the Enterprise 2026](https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html)：3,235 位企业与 IT 负责人的调查。只有 25% 已把 40% 以上的试点投入生产，只有 21% 有成熟的智能体治理模式。
+- [State of AI Report 2026](https://www.stateof.ai/)：一年一度的 AI 全景，研究、产业、政策、安全和来年预测。
 - [McKinsey: The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)：全球企业 AI 采用年度调查。核心发现是“个人效率提升普遍，但能体现在公司利润上的仍是少数”，要关注二者之间的差距。
-- [Microsoft Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index)：AI 如何改变工作方式和组织结构。
+- [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization)：10 个市场、2 万名使用 AI 的知识工作者。核心发现：组织因素对 AI 效果的影响是个人因素的 2 倍多（67% 对 32%）。
 - [WEF Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/)：技能与岗位的结构性变化。
 - [Anthropic Economic Index](https://www.anthropic.com/economic-index)：基于真实使用数据，看 AI 被用在哪些职业任务上。
 - 行业样例（工程建设）：McKinsey《[How AI is reshaping the future of the AEC industry](https://www.mckinsey.com/industries/engineering-construction-and-building-materials/our-insights/how-ai-is-reshaping-the-future-of-the-aec-industry)》（2026-07）。
@@ -78,6 +81,7 @@
 📖 必读
 - OpenAI《[AI in the Enterprise](https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf)》：从 Morgan Stanley 等七家企业提炼的七条经验：先建评估、把 AI 嵌入产品、尽早投入、按场景定制模型、把 AI 交到一线专家手里、给开发者松绑、设定大胆的自动化目标。
 - MIT NANDA《The GenAI Divide: State of AI in Business 2025》（[Fortune 报道](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)）：被广泛引用的“95% 试点没有可衡量回报”出自这份初步研究。报告把原因归结为与业务流程整合不足，而不是模型能力不够，并发现回报最高的往往是后台流程自动化，而非预算最多的销售营销工具。注意这是初步研究，不宜当成普遍失败率引用。
+- 2026 年的新证据：Deloitte 2026 显示只有 25% 的企业把 40% 以上的试点投入了生产；微软 2026 年报告显示 65% 的员工担心不用 AI 会落后，但只有 13% 觉得用 AI 重塑工作会得到奖励。结论是一样的：**卡点在组织，不在技术**。见 [2026 AI 最佳实践](../best-practices-2026.md#三战略最佳实践给管理者) 第 3、5 条。
 
 🛠️ 动手
 - 选模块 3 排名前 2 的用例，各写一页试点方案：负责人、团队构成（业务专家 + 技术 + 数据）、4–8 周目标、成功 / 停止标准、需要改变的流程和考核。
@@ -111,6 +115,7 @@
 🛠️ 动手
 - 盘点组织内正在使用的 AI 工具和用例（包括员工自发使用的），按风险分级：低（内部辅助）/ 中（影响客户或决策）/ 高（自动决策、涉及个人信息或安全）。
 - 起草一页《员工 AI 使用规范》：可以用什么、不能输入什么数据、AI 产出谁负责审核、如何标识。
+- 对已经在用或计划上线的智能体，用 [智能体授权与管控清单](../templates/agent-governance-checklist.md) 定授权等级、核对管控缺口。BCG 2026 显示，42% 的企业预计到 2030 年会让智能体拥有真正的决策权，但目前只有 5% 具备全套管控。
 
 📦 产出：AI 用例风险清单 + 员工使用规范草案 + 治理责任分工（谁批准、谁监控、谁对结果负责）。
 
@@ -126,6 +131,8 @@
 1. **自建、采购还是合作？** AI 编程智能体正在降低自建的成本，要重新评估过去“只能买”的软件。
 2. **怎么度量回报？** 区分领先指标（使用率、任务耗时、质量通过率）和滞后指标（成本、收入、利润），不要只看前者。
 3. **护城河在哪里？** 模型人人都能买到，差异化来自专有数据、流程重构和组织学习速度。
+
+2026 年的战略最佳实践（价值集中、端到端重塑、试点到生产、治理先于自主、组织激励、人机协作方式、利润表度量、主权与供应商）汇总在 [2026 AI 最佳实践](../best-practices-2026.md#三战略最佳实践给管理者)，第四部分附 90 天行动计划。
 
 🛠️ 动手：用 [AI 战略备忘录模板](../templates/ai-strategy-memo.md) 写出完整备忘录。
 
