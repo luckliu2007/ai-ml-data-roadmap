@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2026-10-23
+
+- 资源总表“AI 编程智能体”新增 Fission-AI/OpenSpec（规格驱动开发框架，MIT，100+ 贡献者，已核实 2026-10 仍在更新）
+- radar-ignore 新增 7 个工具/产品类或与主题无关的候选（上下文压缩工具、学术写作 Skills、去 AI 痕迹改写、书籍转 Skill、图像提示词库、个人整理的 Claude Code 实践合集、智能体审计产品）
+
 ## 2026-10-22 · 安全实践、行业案例、中文一手资料（ROADMAP 全部完成）
 
 - 应用路线模块 6 新增“安全实践与红队测试”：攻击面（OWASP、NIST AI 100-2 E2025、MITRE ATLAS）、官方防护指南（Anthropic、OpenAI、Google SAIF）、开源红队工具（promptfoo、garak、PyRIT、Inspect）、Microsoft AI Red Team

@@ -30,6 +30,7 @@
 | [OpenAI Codex CLI](https://github.com/openai/codex)（约 13 万星） | 🛠️ | OpenAI 开源的终端编程智能体 | 英 | 需订阅或 API |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli)（约 11 万星） | 🛠️ | Google 开源的终端编程智能体 | 英 | 有免费额度 |
 | [Agent Skills（Addy Osmani）](https://github.com/addyosmani/agent-skills)（约 11 万星） | 🛠️ | 把规格→计划→实现→测试→评审→上线的工程流程写成编程智能体的 Skills 与命令 | 英 | 免费 |
+| [OpenSpec](https://github.com/Fission-AI/OpenSpec)（[官网](https://openspec.dev/)，约 7.3 万星） | 🛠️ | 规格驱动开发（SDD）框架：先用 `/opsx:propose` 生成提案、需求与场景、设计和任务清单，再让编程智能体按清单实现并归档；支持 30+ 种 AI 编程工具，适合已有代码库 | 英 | 开源 |
 
 ## 知识库与 RAG
 
