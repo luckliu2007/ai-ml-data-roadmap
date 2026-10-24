@@ -68,6 +68,7 @@
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python)（约 3 万星） | 🛠️ | 轻量多智能体框架 | 英 | 开源 |
 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（[官网](https://deepseek.com/harness/)） | 🛠️ | DeepSeek 官方开源的智能体框架（agent harness），“一切皆插件”架构，`npx @deepseek-ai/dsh web` 启动本地 Web UI；仍是开发者预览版，会有不兼容变更，运行前先读其 SAFETY.md | 英 / 中 | 开源 |
 | [hello-agents](https://github.com/datawhalechina/hello-agents)（约 8 万星） | 🛠️ | 《从零开始构建智能体》中文教程 | 中 | 免费 |
+| [深入理解 AI Agent](https://github.com/bojieli/ai-agent-book)（[在线阅读](https://bojieli.github.io/ai-agent-book/astro/)，约 5.6 万星） | 🛠️ | 李博杰著开源书《深入理解 AI Agent：设计原理与工程实践》：10 章覆盖上下文工程、记忆与 RAG、MCP 工具、编程智能体、评估、后训练与多智能体，附 109 个配套实验，提供 PDF / EPUB | 中 / 英 | 免费 |
 | [n8n](https://github.com/n8n-io/n8n)（约 21 万星） | 🛠️ | 可视化工作流自动化，内置 AI 节点 | 英 | 可自托管 |
 | [Dify](https://github.com/langgenius/dify)（约 16 万星） | 🛠️ | 开源 LLM 应用开发平台：工作流、RAG、智能体 | 英 / 中 | 可自托管 |
 | [Coze Studio](https://github.com/coze-dev/coze-studio)（约 2.2 万星） | 🛠️ | 字节跳动扣子开源版，可视化搭建智能体 | 中 / 英 | 开源 |

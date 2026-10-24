@@ -28,3 +28,10 @@ virgiliojr94/book-to-skill
 freestylefly/awesome-gpt-image-2
 shanraisshan/claude-code-best-practice
 ifixai-ai/iFixAi
+ruvnet/ruflo
+HKUDS/DeepTutor
+asgeirtj/system_prompts_leaks
+bmad-code-org/BMAD-METHOD
+trailhq/Trail-Code
+OthmanAdi/planning-with-files
+jnMetaCode/agency-agents-zh
