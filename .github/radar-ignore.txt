@@ -35,3 +35,9 @@ bmad-code-org/BMAD-METHOD
 trailhq/Trail-Code
 OthmanAdi/planning-with-files
 jnMetaCode/agency-agents-zh
+Tencent/WeKnora
+cobusgreyling/loop-engineering
+alirezarezvani/claude-skills
+Imbad0202/academic-research-skills-codex
+open-gsd/gsd-core
+nidhinjs/prompt-master

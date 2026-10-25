@@ -1,5 +1,11 @@
 # 更新日志
 
+## 2026-10-25
+
+- 资源总表“AI 编程智能体”新增 github/awesome-copilot（GitHub 官方维护的 Copilot 智能体 / Instructions / Skills 合集，MIT，已核实 2026-10 仍在更新）
+- 资源总表“知识库与 RAG”新增 VectifyAI/PageIndex（无向量、基于推理的树索引 RAG，MIT，有官方文档，已核实 2026-10 仍在更新）
+- radar-ignore 新增 6 个工具/产品类或不宜收录的候选（与 RAGFlow 定位重复的知识库平台、个人维护的智能体循环模式库、大型 Skills 合集、学术研究 Skills、编程智能体工作流工具、提示词生成 Skill）
+
 ## 2026-10-24
 
 - 资源总表“智能体、工具与工作流”新增 bojieli/ai-agent-book（《深入理解 AI Agent：设计原理与工程实践》开源书，Apache-2.0，10 章 + 109 个配套实验，已核实 2026-10 仍在更新）
