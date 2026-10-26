@@ -64,6 +64,7 @@
 | [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) | 🛠️ 🧭 | 五种工作流模式；“能简单就别上智能体” | 英 | 免费 |
 | [OpenAI: A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) | 🛠️ | 选模型、定义工具、写指令、设护栏 | 英 | 免费 |
 | [12-Factor Agents](https://github.com/humanlayer/12-factor-agents)（约 2.7 万星） | 🛠️ | 可靠智能体软件的 12 条原则 | 英 | 免费 |
+| [Awesome Harness Engineering](https://github.com/ai-boost/awesome-harness-engineering)（约 5 千星） | 🛠️ | 智能体运行框架（harness）资料合集：按智能体循环、任务规划、上下文压缩、工具设计、权限、记忆、验证、可观测性分类，Foundations 部分以 Anthropic、OpenAI、Martin Fowler 等一手文章为主；适合读完上方官方文章后按专题延伸 | 英 | 免费 |
 | [MCP 官方文档](https://modelcontextprotocol.io/) | 🛠️ | 模型上下文协议规范与教程 | 英 | 免费 |
 | [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners)（约 1.7 万星） | 🛠️ | 微软 MCP 入门课程，多语言示例 | 英 / 多语 | 免费 |
 | [Agent Skills](https://github.com/anthropics/skills)（约 18 万星） | 🛠️ | 智能体能力包的官方示例与规范 | 英 | 免费 |
@@ -89,7 +90,7 @@
 | [Hamel Husain: Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) | 🛠️ 🧭 | 为什么评估是 AI 产品的核心 | 英 | 免费 |
 | [Google PAIR People + AI Guidebook](https://pair.withgoogle.com/guidebook/) | 🛠️ | AI 产品体验设计方法 | 英 | 免费 |
 | [Microsoft Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) | 🛠️ | 18 条人机交互设计准则 | 英 | 免费 |
-| [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | 🛠️ 🧭 | 大模型应用十大安全风险与防护（提示注入、敏感信息泄露、过度授权等） | 英 | 免费 |
+| [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | 🛠️ 🧭 | 大模型应用十大安全风险与防护（提示注入、敏感信息泄露、过度授权等）；最新为 [2026 年版](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)（2026-08 发布，过度授权升至第 3 位） | 英 | 免费 |
 | Chip Huyen《AI Engineering》（[作者页](https://huyenchip.com/books/) · [资源仓库](https://github.com/chiphuyen/aie-book)） | 🛠️ | AI 应用工程最系统的一本书：评估、提示、RAG、智能体、微调、部署 | 英 | 书籍付费 |
 
 ## 安全与红队测试
