@@ -1,5 +1,11 @@
 # 更新日志
 
+## 2026-10-26
+
+- 资源总表“智能体、工具与工作流”新增 ai-boost/awesome-harness-engineering（智能体运行框架资料合集，Foundations 以一手文章为主，已核实 2026-10 仍在更新）
+- 资源总表 OWASP Top 10 for LLM Applications 注明最新为 2026 年版（2026-08 发布），持续跟踪表同步更新
+- radar-ignore 新增 7 个工具/产品类或不宜收录的候选（提示词优化工具、书籍蒸馏 Skill、3 个图像生成提示词库、知识图谱基础设施、自进化智能体工具）
+
 ## 2026-10-25
 
 - 资源总表“AI 编程智能体”新增 github/awesome-copilot（GitHub 官方维护的 Copilot 智能体 / Instructions / Skills 合集，MIT，已核实 2026-10 仍在更新）
