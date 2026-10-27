@@ -15,7 +15,7 @@
 | 7 | **评估（Evals）** | 用真实样本和明确标准持续衡量效果，是改进和决策的唯一可靠依据 | 凭几次演示的“感觉”判断好坏 |
 | 8 | **质量 / 成本 / 延迟三角** | 更强的模型更贵更慢，产品设计就是在三者间找平衡 | 默认所有任务都用最强模型 |
 
-> 延伸阅读：概念 4 见 Anthropic《[Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)》；概念 5 见 Anthropic《[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)》；概念 7 见 Hamel Husain《[LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/)》。2026 年的最新做法汇总见 [2026 AI 最佳实践](best-practices-2026.md)。
+> 延伸阅读：概念 4 见 Anthropic《[Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)》；概念 5 见 Anthropic《[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)》；概念 7 见 Hamel Husain《[LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/)》。2026 年的最新做法汇总见 [2026 AI 最佳实践](best-practices-2026.md)，技术选型见 [AI 技术雷达](tech-radar-2026.md)。
 
 ## 二、四级能力标准
 
