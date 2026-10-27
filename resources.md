@@ -48,6 +48,7 @@
 | [Agent Skills（Addy Osmani）](https://github.com/addyosmani/agent-skills)（约 11 万星） | 🛠️ | 把规格→计划→实现→测试→评审→上线的工程流程写成编程智能体的 Skills 与命令 | 英 | 免费 |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec)（[官网](https://openspec.dev/)，约 7.3 万星） | 🛠️ | 规格驱动开发（SDD）框架：先用 `/opsx:propose` 生成提案、需求与场景、设计和任务清单，再让编程智能体按清单实现并归档；支持 30+ 种 AI 编程工具，适合已有代码库 | 英 | 开源 |
 | [Awesome GitHub Copilot](https://github.com/github/awesome-copilot)（[官网](https://awesome-copilot.github.com/)，约 4 万星） | 🛠️ | GitHub 官方维护的社区合集：Copilot 自定义智能体、Instructions、Skills、Hooks 与插件，官网有 Learning Hub 教程；内容来自第三方贡献者，安装前先读其说明 | 英 | 免费 |
+| [APM – Agent Package Manager](https://github.com/microsoft/apm)（[文档](https://microsoft.github.io/apm/)，约 4 千星） | 🛠️ | 微软开源的智能体依赖管理器：在 `apm.yml` 里声明项目要用的 Skills、Instructions、插件和 MCP 服务器，`apm install` 一键配置并生成锁文件，支持 Copilot、Claude Code、Codex、Cursor、Gemini 等；适合团队统一编程智能体配置 | 英 | 开源 |
 
 ## 知识库与 RAG
 
@@ -108,6 +109,7 @@
 | [garak](https://github.com/NVIDIA/garak)（约 1 万星） | 🛠️ | NVIDIA 开源的大模型漏洞扫描器 | 英 | 开源 |
 | [PyRIT](https://github.com/microsoft/PyRIT) | 🛠️ | 微软开源的生成式 AI 风险识别工具 | 英 | 开源 |
 | [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) | 🛠️ | 英国 AI 安全研究所开源的模型评估框架 | 英 | 开源 |
+| [A.I.G（AI-Infra-Guard）](https://github.com/Tencent/AI-Infra-Guard)（[文档](https://tencent.github.io/AI-Infra-Guard/)，约 7 千星） | 🛠️ | 腾讯朱雀实验室开源的 AI 红队测试平台：智能体安全扫描、Skills 与 MCP 工具扫描、AI 基础设施漏洞扫描和大模型越狱评估，Docker 部署，有中文文档 | 英 / 中 | 开源 |
 
 ## 课程
 
