@@ -1,6 +1,6 @@
 # 资源总表
 
-**核实日期：2026-10-23。** GitHub 项目均通过 GitHub API 确认未归档、近期有更新，星标数四舍五入。网页资源均已实际访问确认。
+**核实日期：2026-10-27。** GitHub 项目均通过 GitHub API 确认未归档、近期有更新，星标数四舍五入。网页资源均已实际访问确认。
 
 图例 · 路线：🛠️ 应用构建者 · 🧭 管理者　语言：英 / 中　费用：免费 / 部分免费 / 付费
 
@@ -8,7 +8,10 @@
 
 | 资源 | 路线 | 说明 | 语言 | 费用 |
 | --- | --- | --- | --- | --- |
-| [2026 AI 最佳实践（本仓库）](best-practices-2026.md) | 🛠️ 🧭 | 2026 技术态势 + 构建者 9 条 + 管理者 8 条最佳实践 + 90 天计划 | 中 | 免费 |
+| [2026 AI 最佳实践（本仓库）](best-practices-2026.md) | 🛠️ 🧭 | 2026 技术与监管态势 + 构建者 13 条 + 管理者 11 条最佳实践 + 90 天计划 | 中 | 免费 |
+| [AI 技术雷达（本仓库）](tech-radar-2026.md) | 🛠️ 🧭 | AI 方法、工具、平台、框架的四档分级与 7 个反模式 | 中 | 免费 |
+| [AI 合规时间线（本仓库）](ai-regulation-tracker.md) | 🧭 | 中国、欧盟、国际标准的关键日期与合规最小清单 | 中 | 免费 |
+| [Thoughtworks 技术雷达](https://www.thoughtworks.com/radar)（[第 34 期 PDF](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf)） | 🛠️ 🧭 | 每年春秋两期，一线交付团队对技术的采用建议；第 34 期（2026-04）以智能体和编程智能体为主 | 英 | 免费 |
 | [Agentic AI Foundation（AAIF）](https://aaif.io/) | 🛠️ 🧭 | Linux 基金会旗下，托管 MCP、AGENTS.md、goose 等智能体开放标准（2025-12 成立） | 英 | 免费 |
 | [MCP 2026-07-28 规范变更说明](https://modelcontextprotocol.io/specification/2026-07-28/changelog) | 🛠️ | 无状态核心、发现机制、Tasks 扩展、MCP Apps、授权加固 | 英 | 免费 |
 | [A2A 协议](https://a2a-protocol.org/) | 🛠️ | 智能体之间互相发现和协作的开放协议 | 英 | 免费 |
@@ -19,6 +22,11 @@
 | [Anthropic：Harness design for long-running apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) | 🛠️ | 长时应用开发的运行框架设计 | 英 | 免费 |
 | [Anthropic：Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | 🛠️ | 智能体评估方法 | 英 | 免费 |
 | [Anthropic：How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | 🛠️ | 多智能体系统的设计与经验 | 英 | 免费 |
+| [Anthropic：Introducing advanced tool use](https://www.anthropic.com/engineering/advanced-tool-use) | 🛠️ | 工具搜索、程序化工具调用、工具调用示例（2025-11） | 英 | 免费 |
+| [Anthropic：Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) | 🛠️ | 让模型写代码调用 MCP 工具，按需加载、减少 token（2025-11） | 英 | 免费 |
+| [Anthropic：Scaling Managed Agents](https://www.anthropic.com/engineering/managed-agents) | 🛠️ | 把智能体拆成会话日志、运行框架、沙盒三部分，可替换、可恢复（2026-04） | 英 | 免费 |
+| [Anthropic：How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude) | 🛠️ 🧭 | 智能体隔离：先限制环境、凭证不进沙盒、把允许访问的域名当作能力来管（2026-05） | 英 | 免费 |
+| [Anthropic：Quantifying infrastructure noise in agentic coding evals](https://www.anthropic.com/engineering/infrastructure-noise) | 🛠️ | 运行环境配置对智能体评估分数的影响（2026-02） | 英 | 免费 |
 
 ## 模型选型
 
@@ -48,6 +56,8 @@
 | [Agent Skills（Addy Osmani）](https://github.com/addyosmani/agent-skills)（约 11 万星） | 🛠️ | 把规格→计划→实现→测试→评审→上线的工程流程写成编程智能体的 Skills 与命令 | 英 | 免费 |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec)（[官网](https://openspec.dev/)，约 7.3 万星） | 🛠️ | 规格驱动开发（SDD）框架：先用 `/opsx:propose` 生成提案、需求与场景、设计和任务清单，再让编程智能体按清单实现并归档；支持 30+ 种 AI 编程工具，适合已有代码库 | 英 | 开源 |
 | [Awesome GitHub Copilot](https://github.com/github/awesome-copilot)（[官网](https://awesome-copilot.github.com/)，约 4 万星） | 🛠️ | GitHub 官方维护的社区合集：Copilot 自定义智能体、Instructions、Skills、Hooks 与插件，官网有 Learning Hub 教程；内容来自第三方贡献者，安装前先读其说明 | 英 | 免费 |
+| [GitHub Spec Kit](https://github.com/github/spec-kit)（约 14 万星） | 🛠️ | GitHub 开源的规格驱动开发工具包，核心是项目“宪章”和规格 → 计划 → 任务的流程；Thoughtworks 雷达列为“评估”，团队多在已有代码库中试用 | 英 | 开源 |
+| [Superpowers](https://github.com/obra/superpowers)（约 31 万星） | 🛠️ | 由可组合 Skills 构成的编程智能体工作流（头脑风暴、写计划、测试驱动开发、代码评审等）；Thoughtworks 雷达列为“评估” | 英 | 开源 |
 | [APM – Agent Package Manager](https://github.com/microsoft/apm)（[文档](https://microsoft.github.io/apm/)，约 4 千星） | 🛠️ | 微软开源的智能体依赖管理器：在 `apm.yml` 里声明项目要用的 Skills、Instructions、插件和 MCP 服务器，`apm install` 一键配置并生成锁文件，支持 Copilot、Claude Code、Codex、Cursor、Gemini 等；适合团队统一编程智能体配置 | 英 | 开源 |
 
 ## 知识库与 RAG
@@ -56,6 +66,7 @@
 | --- | --- | --- | --- | --- |
 | [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)（约 3 万星） | 🛠️ | 进阶 RAG 技术的可运行 notebook | 英 | 免费 |
 | [RAGFlow](https://github.com/infiniflow/ragflow)（约 9.2 万星） | 🛠️ | 开源 RAG 引擎，擅长复杂文档解析 | 英 / 中 | 开源 |
+| [Docling](https://github.com/docling-project/docling)（约 7 万星） | 🛠️ | 开源文档解析：PDF、扫描件、Office 文件转 Markdown / JSON，可自托管；Thoughtworks 雷达列为“试用” | 英 | 开源 |
 | [PageIndex](https://github.com/VectifyAI/PageIndex)（[文档](https://docs.pageindex.ai)，约 4 万星） | 🛠️ | 无向量 RAG：为长文档生成层级目录树索引，由大模型推理逐层查找相关章节，不用向量库和切块，适合财报、法规等长专业文档；可与向量检索方案对比学习 | 英 | 开源 |
 
 ## 智能体、工具与工作流
@@ -70,6 +81,9 @@
 | [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners)（约 1.7 万星） | 🛠️ | 微软 MCP 入门课程，多语言示例 | 英 / 多语 | 免费 |
 | [Agent Skills](https://github.com/anthropics/skills)（约 18 万星） | 🛠️ | 智能体能力包的官方示例与规范 | 英 | 免费 |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python)（约 3 万星） | 🛠️ | 轻量多智能体框架 | 英 | 开源 |
+| [LangGraph](https://github.com/langchain-ai/langgraph)（约 4.4 万星） | 🛠️ | 有状态图结构的智能体框架，支持持久化执行和人工介入；Thoughtworks 雷达从“采用”调到“试用”，认为不必作为所有智能体的默认选择 | 英 | 开源 |
+| [Google ADK](https://github.com/google/adk-python)（约 2.2 万星） | 🛠️ | Google 的智能体开发框架，含编排、工具、评估和部署；雷达“试用”，部分功能仍未正式发布 | 英 | 开源 |
+| [Pydantic AI](https://github.com/pydantic/pydantic-ai)（约 2.1 万星） | 🛠️ | 类型安全的 Python 智能体框架，结构化输出和持久化执行支持好 | 英 | 开源 |
 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（[官网](https://deepseek.com/harness/)） | 🛠️ | DeepSeek 官方开源的智能体框架（agent harness），“一切皆插件”架构，`npx @deepseek-ai/dsh web` 启动本地 Web UI；仍是开发者预览版，会有不兼容变更，运行前先读其 SAFETY.md | 英 / 中 | 开源 |
 | [hello-agents](https://github.com/datawhalechina/hello-agents)（约 8 万星） | 🛠️ | 《从零开始构建智能体》中文教程 | 中 | 免费 |
 | [深入理解 AI Agent](https://github.com/bojieli/ai-agent-book)（[在线阅读](https://bojieli.github.io/ai-agent-book/astro/)，约 5.6 万星） | 🛠️ | 李博杰著开源书《深入理解 AI Agent：设计原理与工程实践》：10 章覆盖上下文工程、记忆与 RAG、MCP 工具、编程智能体、评估、后训练与多智能体，附 109 个配套实验，提供 PDF / EPUB | 中 / 英 | 免费 |
@@ -89,6 +103,13 @@
 | --- | --- | --- | --- | --- |
 | [Hamel Husain: LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/) | 🛠️ | 评估实践最全面的问答汇总 | 英 | 免费 |
 | [Hamel Husain: Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) | 🛠️ 🧭 | 为什么评估是 AI 产品的核心 | 英 | 免费 |
+| [DeepEval](https://github.com/confident-ai/deepeval)（约 1.9 万星） | 🛠️ | 开源评估框架：RAG 指标、自定义指标、工具调用正确性和任务完成度等智能体指标；雷达“试用” | 英 | 开源 |
+| [Langfuse](https://github.com/langfuse/langfuse)（约 3.7 万星） | 🛠️ | 开源 LLM 工程平台：追踪、提示管理、评估、数据集，SDK 基于 OpenTelemetry；雷达“试用” | 英 | 可自托管 |
+| [Arize Phoenix](https://github.com/Arize-ai/phoenix)（约 1.2 万星） | 🛠️ | 开源的 LLM 追踪与评估工具，基于 OpenTelemetry | 英 | 可自托管 |
+| [OpenTelemetry GenAI 语义约定](https://github.com/open-telemetry/semantic-conventions-genai) | 🛠️ | 模型调用、智能体、MCP 的标准埋点字段；仍是 Development 状态，2026-06 起迁到独立仓库 | 英 | 免费 |
+| [LiteLLM](https://github.com/BerriAI/litellm)（约 6.2 万星） | 🛠️ | AI 网关：多家模型统一接入、故障切换、预算与访问控制；雷达“试用”。2026-03 曾有两个 PyPI 版本被投毒，务必锁定版本（[官方说明](https://docs.litellm.ai/blog/security-update-march-2026)） | 英 | 开源 |
+| [Instructor](https://github.com/567-labs/instructor)（约 1.4 万星） | 🛠️ | 让模型按 Pydantic 模型返回结构化数据，自动校验和重试 | 英 | 开源 |
+| [Unsloth](https://github.com/unslothai/unsloth)（约 7.9 万星） | 🛠️ | 低显存、低成本微调开源模型；雷达“评估” | 英 | 开源 |
 | [Google PAIR People + AI Guidebook](https://pair.withgoogle.com/guidebook/) | 🛠️ | AI 产品体验设计方法 | 英 | 免费 |
 | [Microsoft Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) | 🛠️ | 18 条人机交互设计准则 | 英 | 免费 |
 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | 🛠️ 🧭 | 大模型应用十大安全风险与防护（提示注入、敏感信息泄露、过度授权等）；最新为 [2026 年版](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)（2026-08 发布，过度授权升至第 3 位） | 英 | 免费 |
@@ -101,6 +122,8 @@
 | [NIST AI 100-2 E2025](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) | 🛠️ 🧭 | 对抗性机器学习攻击与防护的分类和术语 | 英 | 免费 |
 | [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 🛠️ 🧭 | 智能体应用十大安全风险（2025-12 发布） | 英 | 免费 |
 | [MITRE ATLAS](https://atlas.mitre.org/) | 🛠️ | 针对 AI 系统的攻击战术与技术知识库 | 英 | 免费 |
+| [Agent Scan](https://github.com/snyk/agent-scan)（约 3 千星） | 🛠️ | Snyk 开源的智能体生态扫描器：发现本机的 MCP 服务器和 Skills，检查提示注入、工具投毒、有毒数据流、硬编码密钥；扫描时会把组件元数据发给 Snyk，雷达“评估” | 英 | 开源 |
+| [Simon Willison：The lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) | 🛠️ 🧭 | “致命三要素”：私密数据 + 不可信内容 + 对外通信，判断智能体是否危险的简明框架 | 英 | 免费 |
 | [Anthropic：缓解越狱与提示注入](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks) | 🛠️ | 官方防护指南 | 英 | 免费 |
 | [OpenAI：Safety best practices](https://developers.openai.com/api/docs/guides/safety-best-practices) | 🛠️ | 官方安全最佳实践 | 英 | 免费 |
 | [Google SAIF](https://saif.google/) | 🛠️ 🧭 | Google 的安全 AI 框架 | 英 | 免费 |
@@ -132,6 +155,8 @@
 | [BCG：AI Is Starting to Pay Off](https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value) | 🧭 | 2026 年 AI 价值分布、领先企业做法、智能体管控缺口 | 英 | 免费 |
 | [Deloitte State of AI in the Enterprise 2026](https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html) | 🧭 | 试点到生产、智能体治理、主权 AI | 英 | 免费 |
 | [McKinsey: The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) | 🧭 | 企业 AI 采用年度调查 | 英 | 免费 |
+| [DORA 2025 State of AI-assisted Software Development](https://dora.dev/research/2025/dora-report/) | 🛠️ 🧭 | Google DORA 团队对近 5,000 名技术从业者的研究：AI 是放大器；七项基础能力 | 英 | 免费 |
+| [DORA：ROI of AI-assisted Software Development](https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development) | 🧭 | AI 研发投入的回报测算框架，J 曲线与三种情景（2026） | 英 | 免费（需填表下载） |
 | [State of AI Report 2026](https://www.stateof.ai/) | 🛠️ 🧭 | Air Street Capital 年度报告：研究、产业、政策、安全与下一年预测（2026-10） | 英 | 免费 |
 | [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization) | 🧭 | 智能体时代的组织与工作方式（2026） | 英 | 免费 |
 | [WEF Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) | 🧭 | 岗位与技能结构变化 | 英 | 免费 |
@@ -162,12 +187,19 @@
 | [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) | 🧭 | AI 风险管理框架 | 英 | 免费 |
 | [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) | 🧭 | 生成式 AI 配置文件 | 英 | 免费 |
 | [ISO/IEC 42001](https://www.iso.org/standard/42001) | 🧭 | 可认证的 AI 管理体系标准 | 英 | 标准付费 |
+| [ISO/IEC 42005](https://www.iso.org/standard/42005) | 🧭 | AI 系统影响评估指南（2025），与 42001 配套 | 英 | 标准付费 |
+| [新加坡《智能体 AI 治理示范框架》](https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/new-model-ai-governance-framework-for-agentic-ai) | 🧭 | 全球首个专门针对智能体的治理框架（2026-01，自愿性） | 英 | 免费 |
+| [国际 AI 安全报告 2026](https://internationalaisafetyreport.org/) | 🧭 | Bengio 牵头、100 多位专家撰写的通用 AI 能力与风险科学评估（2026-02） | 英 | 免费 |
 | [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) | 🧭 | 欧盟 AI 法规原文 | 多语（含英） | 免费 |
 | [OECD.AI](https://oecd.ai/) | 🧭 | 各国 AI 政策观察 | 英 | 免费 |
 | [生成式人工智能服务管理暂行办法](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm) | 🧭 | 中国生成式 AI 服务基本规则（2023-08-15 施行） | 中 | 免费 |
 | [人工智能生成合成内容标识办法](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) | 🧭 | AI 生成内容标识要求（2025-09-01 施行） | 中 | 免费 |
 | [人工智能安全治理框架 2.0 版](https://www.cac.gov.cn/2025-09/15/c_1759653448369123.htm) | 🧭 | 国内 AI 风险分类、分级治理与技术措施（2025-09） | 中 | 免费 |
 | [国务院关于深入实施“人工智能+”行动的意见](https://www.gov.cn/zhengce/content/202508/content_7037861.htm) | 🧭 | 国家推动 AI 与各行业融合的六大重点行动（国发〔2025〕11 号） | 中 | 免费 |
+| [《网络安全法》修改决定](https://www.cac.gov.cn/2025-10/29/c_1763461514768457.htm) | 🧭 | 新增第二十条人工智能条款，2026-01-01 施行 | 中 | 免费 |
+| [《智能体规范应用与创新发展实施意见》（新华网报道）](https://www.news.cn/politics/20260508/aa31c404610e4cc59f47fea3ab04929b/c.html) | 🧭 | 国家层面首份智能体专项文件：决策边界、授权范围、19 个典型场景（2026-05） | 中 | 免费 |
+| [人工智能拟人化互动服务管理暂行办法](https://www.cac.gov.cn/2026-04/10/c_1777558395023172.htm) | 🧭 | 情感陪伴类 AI 服务的专门规则（2026-07-15 施行） | 中 | 免费 |
+| [“人工智能+制造”专项行动实施意见（新华网报道）](https://www.news.cn/tech/20260113/635d4b8aa5ed44d6af693ae39fe53b14/c.html) | 🧭 | 工信部等八部门，到 2027 年的制造业 AI 目标（2026-01） | 中 | 免费 |
 
 ## 收录与淘汰原则
 

@@ -23,13 +23,15 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| [best-practices-2026.md](best-practices-2026.md) | **2026 AI 最佳实践**：今年的技术变化、构建者 9 条、管理者 8 条、90 天行动计划 |
+| [best-practices-2026.md](best-practices-2026.md) | **2026 AI 最佳实践**：今年的 9 项技术与监管变化、构建者 13 条、管理者 11 条、90 天行动计划 |
+| [tech-radar-2026.md](tech-radar-2026.md) | **AI 技术雷达**：依据 Thoughtworks 技术雷达第 34 期，把 AI 方法、工具、平台、框架分为采用 / 试用 / 评估 / 谨慎四档，附 7 个反模式 |
+| [ai-regulation-tracker.md](ai-regulation-tracker.md) | **AI 合规时间线**：中国、欧盟、国际标准的关键日期与企业合规最小清单 |
 | [framework.md](framework.md) | **能力模型**：两条路线共用的 8 个核心概念 + L1–L4 四级能力标准 |
 | [tracks/app-builder.md](tracks/app-builder.md) | **应用构建者路线**：12 周、6 个模块、1 个毕业项目 |
 | [tracks/leader.md](tracks/leader.md) | **管理者路线**：8 周、6 个模块、1 份 AI 战略备忘录 |
 | [self-assessment.md](self-assessment.md) | 按等级自测清单，开始前测一次、每个模块后再测 |
 | [resources.md](resources.md) | 全部资源总表（类型、语言、费用、核实日期） |
-| [templates/](templates/) | 用例画布、评估计划、AI 战略备忘录、智能体授权与管控清单、每周学习记录 |
+| [templates/](templates/) | 用例画布、评估计划、模型选型评分卡、AI 试点立项书、AI 战略备忘录、智能体授权与管控清单、员工 AI 使用规范、AI 事故响应手册、每周学习记录 |
 
 ## 怎么开始
 
