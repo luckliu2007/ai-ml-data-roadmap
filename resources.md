@@ -59,6 +59,7 @@
 | [GitHub Spec Kit](https://github.com/github/spec-kit)（约 14 万星） | 🛠️ | GitHub 开源的规格驱动开发工具包，核心是项目“宪章”和规格 → 计划 → 任务的流程；Thoughtworks 雷达列为“评估”，团队多在已有代码库中试用 | 英 | 开源 |
 | [Superpowers](https://github.com/obra/superpowers)（约 31 万星） | 🛠️ | 由可组合 Skills 构成的编程智能体工作流（头脑风暴、写计划、测试驱动开发、代码评审等）；Thoughtworks 雷达列为“评估” | 英 | 开源 |
 | [APM – Agent Package Manager](https://github.com/microsoft/apm)（[文档](https://microsoft.github.io/apm/)，约 4 千星） | 🛠️ | 微软开源的智能体依赖管理器：在 `apm.yml` 里声明项目要用的 Skills、Instructions、插件和 MCP 服务器，`apm install` 一键配置并生成锁文件，支持 Copilot、Claude Code、Codex、Cursor、Gemini 等；适合团队统一编程智能体配置 | 英 | 开源 |
+| [Elephant-Goldfish Model（EGM）](https://github.com/google/elephant-goldfish-model)（[官网](https://egm.dev)，约 3 千星） | 🛠️ | Google 开源的“先设计后编码”插件：带完整上下文的智能体起草设计文档，再派不带对话上下文的新子智能体审查，暴露隐含假设和盲点，由人拍板后再实现；支持 Claude Code、Codex、Antigravity，README 注明不是 Google 官方支持产品 | 英 | 开源 |
 
 ## 知识库与 RAG
 
