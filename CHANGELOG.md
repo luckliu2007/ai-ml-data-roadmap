@@ -1,5 +1,13 @@
 # 更新日志
 
+## 2026-10-30
+
+- `ai-regulation-tracker.md`、`resources.md`：《智能体规范应用与创新发展实施意见》改链到国家网信办全文（原为新华网报道和深圳市司法局转载），补充第 6、7、9、11 条要点
+- `templates/agent-governance-checklist.md`：合规核对新增三问（分类分级、决策权限、供应链安全）
+- `best-practices-2026.md`：第一部分新增第 10 项（GitHub Octoverse 2026，智能体起草的 PR 超过 40%）
+- `tracks/leader.md`：模块 2 新增 KPMG 2026 Global CEO Outlook
+- `ROADMAP.md`：持续跟踪表更新中国 AI 规章和技术雷达第 35 期状态
+
 ## 2026-10-28
 
 - 资源总表“AI 编程智能体”新增 google/elephant-goldfish-model（Google 开源的设计起草 + 零上下文子智能体评审插件，Apache-2.0，已核实 2026-10 仍在更新）
