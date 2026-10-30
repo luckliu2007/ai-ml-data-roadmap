@@ -23,7 +23,7 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| [best-practices-2026.md](best-practices-2026.md) | **2026 AI 最佳实践**：今年的 9 项技术与监管变化、构建者 13 条、管理者 11 条、90 天行动计划 |
+| [best-practices-2026.md](best-practices-2026.md) | **2026 AI 最佳实践**：今年的 10 项技术与监管变化、构建者 13 条、管理者 11 条、90 天行动计划 |
 | [tech-radar-2026.md](tech-radar-2026.md) | **AI 技术雷达**：依据 Thoughtworks 技术雷达第 34 期，把 AI 方法、工具、平台、框架分为采用 / 试用 / 评估 / 谨慎四档，附 7 个反模式 |
 | [ai-regulation-tracker.md](ai-regulation-tracker.md) | **AI 合规时间线**：中国、欧盟、国际标准的关键日期与企业合规最小清单 |
 | [framework.md](framework.md) | **能力模型**：两条路线共用的 8 个核心概念 + L1–L4 四级能力标准 |

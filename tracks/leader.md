@@ -35,6 +35,7 @@
 - [Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report)：技术进展、投资、采用、政策的年度基线（2026-04 发布）。
 - [BCG：AI Is Starting to Pay Off（2026-09-30）](https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value)：1,330 位高管的调查。只有 7.5% 的企业属于“面向未来型”，财务表现远超落后者；另有 41% 正在规模化。智能体预计到 2030 年贡献约 40% 的 AI 价值。
 - [Deloitte State of AI in the Enterprise 2026](https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html)：3,235 位企业与 IT 负责人的调查。只有 25% 已把 40% 以上的试点投入生产，只有 21% 有成熟的智能体治理模式。
+- [KPMG 2026 Global CEO Outlook](https://kpmg.com/xx/en/our-insights/value-creation/global-ceo-outlook-survey.html)（2026-10）：12 个市场（含中国）1,400 位大型企业 CEO。79% 把 AI 列为未来三年的首要投资方向，72% 计划明年把超过 10% 的预算投向 AI；落地难点依次是伦理（57%）、网络安全（52%）、成本（51%）和数据主权（50%），员工抵触只有 26%。
 - [State of AI Report 2026](https://www.stateof.ai/)：一年一度的 AI 全景，研究、产业、政策、安全和来年预测。
 - [McKinsey: The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)：全球企业 AI 采用年度调查。核心发现是“个人效率提升普遍，但能体现在公司利润上的仍是少数”，要关注二者之间的差距。
 - [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization)：10 个市场、2 万名使用 AI 的知识工作者。核心发现：组织因素对 AI 效果的影响是个人因素的 2 倍多（67% 对 32%）。

@@ -22,6 +22,7 @@
 | 7 | **行业开始系统总结反模式**。Thoughtworks 技术雷达第 34 期（2026-04）把“默认使用 MCP”“智能体指令膨胀”“用代码产出量衡量生产率”“AI 加速的影子 IT”“忽视智能体工作流的持久性”等 7 项列为“谨慎”，把上下文工程、结构化输出、DORA 指标列为“采用” | 选型和治理时对照这份反模式清单自查 | [AI 技术雷达（本仓库）](tech-radar-2026.md)、[Thoughtworks 技术雷达](https://www.thoughtworks.com/radar) |
 | 8 | **智能体安全从“审批每一步”转向“限制能接触什么”**。Anthropic 2026-05 公开的做法：用户对权限提示的同意率约 93%，逐条审批会疲劳，所以优先在环境层面限制（沙盒、网络出口管控、凭证不进沙盒）。Thoughtworks 指出，“私密数据 + 不可信内容 + 对外通信”三者同时具备，已是大多数有用智能体的默认状态 | 先设计隔离边界，再设计审批点；把凭证放在智能体够不着的地方 | Anthropic：[How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)；[Thoughtworks 雷达第 34 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf) |
 | 9 | **监管从原则走向细则**。中国 2026 年施行《网络安全法》AI 条款（1 月），印发《智能体规范应用与创新发展实施意见》（5 月，要求智能体执行操作不得超出用户授权范围），施行《人工智能拟人化互动服务管理暂行办法》（7 月）；欧盟“数字综合法案”2026-07 生效，高风险义务推迟到 2027-12 和 2028-08，但大部分透明度义务 2026-08 起已经适用 | 智能体分级授权从最佳实践变成政策要求；出海业务按新日期倒排合规计划 | [AI 合规时间线（本仓库）](ai-regulation-tracker.md) |
+| 10 | **编程智能体成了写代码的默认起点**。GitHub Octoverse 2026（2026-10-28）：到 2026-09，超过 40% 的 pull request 由智能体起草第一版（3 月为 17%）；2026 年新建的仓库里，带智能体配置文件的仓库平均提交数是不带的 8 倍；AI 辅助代码审查的使用量一年增长 90% 以上；TypeScript、Python、Rust 的合并 PR 中约 40%–44% 检测到 AI 参与 | 瓶颈从写代码转到审查和验证：给仓库写精简的 AGENTS.md、把测试接进智能体工作流（见第二部分），并给代码审查留出人手和时间 | [Octoverse 2026](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/) |
 
 ---
 
