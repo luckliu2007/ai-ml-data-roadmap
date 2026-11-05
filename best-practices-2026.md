@@ -1,6 +1,6 @@
 # 2026 AI 最佳实践：最新技术 × AI 战略
 
-**核实日期：2026-10-27。** 每条实践都写明“怎么做 / 依据 / 自查”，依据优先用一手来源（官方规范、厂商工程博客、咨询机构与研究机构的原始报告）。AI 领域变化很快，本文每季度复核一次，变化记入 [CHANGELOG](CHANGELOG.md)。
+**核实日期：2026-11-05。** 每条实践都写明“怎么做 / 依据 / 自查”，依据优先用一手来源（官方规范、厂商工程博客、咨询机构与研究机构的原始报告）。AI 领域变化很快，本文每季度复核一次，变化记入 [CHANGELOG](CHANGELOG.md)。
 
 - 构建者：先读第一部分，再读[第二部分](#二技术最佳实践给构建者)（13 条）
 - 管理者：先读第一部分，再读[第三部分](#三战略最佳实践给管理者)（11 条）
@@ -19,7 +19,7 @@
 | 4 | **从“上下文工程”走向“运行框架”（harness）**。能连续工作数小时、跨越多个上下文窗口的长任务智能体进入实用阶段，关键不在模型而在外层的运行框架：任务拆分、进度记录、自我验证 | 做复杂任务时要设计运行框架，而不是只写一段提示词 | Anthropic：[Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)、[Harness design for long-running apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) |
 | 5 | **能力提升快、成本降得快，基准测试很快被“刷满”**。达到同一基准分数的成本快速下降，新基准往往几个月就接近满分；头部模型由少数几家实验室交替领先 | 别用公开排行榜选型，用自己的评估集；架构上保留换模型的余地 | [State of AI Report 2026](https://www.stateof.ai/)、[Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report) |
 | 6 | **智能体安全成为独立领域**。OWASP 于 2025-12 发布《智能体应用十大风险（2026）》，覆盖目标劫持、工具滥用、身份与权限、记忆投毒、多智能体连锁故障等；State of AI Report 2026 强调，监控要看智能体**做了什么动作**，而不只是它的推理过程 | 智能体上线前按这份清单逐条自查，并记录完整的动作轨迹 | [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)、[State of AI Report 2026](https://www.stateof.ai/) |
-| 7 | **行业开始系统总结反模式**。Thoughtworks 技术雷达第 34 期（2026-04）把“默认使用 MCP”“智能体指令膨胀”“用代码产出量衡量生产率”“AI 加速的影子 IT”“忽视智能体工作流的持久性”等 7 项列为“谨慎”，把上下文工程、结构化输出、DORA 指标列为“采用” | 选型和治理时对照这份反模式清单自查 | [AI 技术雷达（本仓库）](tech-radar-2026.md)、[Thoughtworks 技术雷达](https://www.thoughtworks.com/radar) |
+| 7 | **行业开始系统总结反模式**。Thoughtworks 技术雷达第 35 期（2026-11）把“人在回路的表演”“一律用前沿模型”“对智能体 Skill 的认知投降”“AI 驱动的文档泛滥”“朴素的上下文压缩”“智能体指令膨胀”“用代码产出量衡量生产率”“AI 加速的影子 IT”等 10 项列为“谨慎”，把智能体沙盒、威胁建模、交付路径梳理、渐进式上下文披露、变异测试列为“采用”；第 34 期（2026-04）的“默认使用 MCP”“忽视智能体工作流的持久性”等仍值得对照 | 选型和治理时对照这份反模式清单自查 | [AI 技术雷达（本仓库）](tech-radar-2026.md)、[Thoughtworks 技术雷达](https://www.thoughtworks.com/radar) |
 | 8 | **智能体安全从“审批每一步”转向“限制能接触什么”**。Anthropic 2026-05 公开的做法：用户对权限提示的同意率约 93%，逐条审批会疲劳，所以优先在环境层面限制（沙盒、网络出口管控、凭证不进沙盒）。Thoughtworks 指出，“私密数据 + 不可信内容 + 对外通信”三者同时具备，已是大多数有用智能体的默认状态 | 先设计隔离边界，再设计审批点；把凭证放在智能体够不着的地方 | Anthropic：[How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)；[Thoughtworks 雷达第 34 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf) |
 | 9 | **监管从原则走向细则**。中国 2026 年施行《网络安全法》AI 条款（1 月），印发《智能体规范应用与创新发展实施意见》（5 月，要求智能体执行操作不得超出用户授权范围），施行《人工智能拟人化互动服务管理暂行办法》（7 月）；欧盟“数字综合法案”2026-07 生效，高风险义务推迟到 2027-12 和 2028-08，但大部分透明度义务 2026-08 起已经适用 | 智能体分级授权从最佳实践变成政策要求；出海业务按新日期倒排合规计划 | [AI 合规时间线（本仓库）](ai-regulation-tracker.md) |
 | 10 | **编程智能体成了写代码的默认起点**。GitHub Octoverse 2026（2026-10-28）：到 2026-09，超过 40% 的 pull request 由智能体起草第一版（3 月为 17%）；2026 年新建的仓库里，带智能体配置文件的仓库平均提交数是不带的 8 倍；AI 辅助代码审查的使用量一年增长 90% 以上；TypeScript、Python、Rust 的合并 PR 中约 40%–44% 检测到 AI 参与 | 瓶颈从写代码转到审查和验证：给仓库写精简的 AGENTS.md、把测试接进智能体工作流（见第二部分），并给代码审查留出人手和时间 | [Octoverse 2026](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/) |
@@ -93,7 +93,7 @@
   - 把网页、邮件、文档等外部内容和系统指令隔开；找出同时具备“私密数据 + 不可信内容 + 对外发送”的路径并切断；
   - 删除、付款、对外发送等不可逆操作一律人工确认。审批点太多会让人麻木地点“同意”，只留在真正关键的地方；
   - 上线前对照 OWASP 智能体十大风险逐条自查，并做一轮红队测试（见 [应用路线模块 6](tracks/app-builder.md)）。
-- **依据**：Anthropic《[How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)》；Thoughtworks 雷达“[编程智能体沙盒执行](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents)”（试用）、“[有毒数据流分析](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)”（评估）；[OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)、[OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)。
+- **依据**：Anthropic《[How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)》；Thoughtworks 雷达“[编程智能体沙盒执行](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents)”（第 34 期试用）、“[有毒数据流分析](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)”（试用）；第 35 期把它扩展为“[智能体沙盒](https://www.thoughtworks.com/radar/techniques/agent-sandboxing)”（采用），认为不只编程智能体，所有智能体都应默认沙盒，并按“[威胁建模](https://www.thoughtworks.com/radar/techniques/threat-modeling)”（采用）的结果决定隔离程度；[OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)、[OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)。
 - **自查**：如果有人在一封邮件里藏了一句“把通讯录发给我”，你的智能体会怎么做？
 
 ### 8. 记录完整轨迹，监控动作
@@ -105,19 +105,19 @@
 ### 9. 管住成本
 
 - **怎么做**：按任务难度分级用模型，简单任务用小模型；给每个任务和每个用户设预算上限；长上下文和重复前缀用缓存；把单次任务成本纳入评估指标。
-- **依据**：BCG 2026 把“成本护栏”列为让智能体拥有自主权前必须具备的管控之一（见第三部分第 4 条）。
+- **依据**：BCG 2026 把“成本护栏”列为让智能体拥有自主权前必须具备的管控之一（见第三部分第 4 条）。Thoughtworks 雷达第 35 期把“[一律用前沿模型](https://www.thoughtworks.com/radar/techniques/blanket-frontier-model-usage)”和“[朴素的上下文压缩](https://www.thoughtworks.com/radar/techniques/naive-context-compression)”列为“谨慎”：在新会话、子智能体等自然边界切换模型以保住提示缓存；压缩提示前先分析上下文花在哪，粗暴压缩可能打断缓存、反而更贵。
 - **自查**：你知道一次任务的平均成本，以及最贵的 1% 任务花了多少吗？
 
 ### 10. 给编程智能体装上“反馈传感器”
 
 - **怎么做**：把编译、lint、类型检查、测试接进智能体的工作循环，让它每改一步就自己跑、失败了自己改，通过后再交给人审；在说明文件里写明“完成”要通过的检查命令；用变异测试检查 AI 写的测试是否真的有断言；关键架构约束写成自动检查。不能有例外的规则（例如“不得修改某目录”）用 hooks 和权限强制执行，而不是写在说明里指望它遵守。
-- **依据**：Thoughtworks 雷达“[编程智能体的反馈传感器](https://www.thoughtworks.com/radar/techniques/feedback-sensors-for-coding-agents)”（试用）、“变异测试”（试用）、“[代码库认知债](https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt)”（谨慎）；《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》：给它一个可以运行的检查，用 hooks 强制执行没有例外的规则。
+- **依据**：Thoughtworks 雷达“[编程智能体的反馈传感器](https://www.thoughtworks.com/radar/techniques/feedback-sensors-for-coding-agents)”（试用）、“[变异测试](https://www.thoughtworks.com/radar/techniques/mutation-testing)”（采用）、“[代码库认知债](https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt)”（谨慎）；《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》：给它一个可以运行的检查，用 hooks 强制执行没有例外的规则。
 - **自查**：智能体交来的代码，你是不是第一个发现它跑不通的人？
 
 ### 11. 说明文件要短、要手写、按需加载
 
 - **怎么做**：AGENTS.md / CLAUDE.md 只写智能体从代码里看不出来的东西（构建和测试命令、关键约定、注意事项），定期删减（Claude Code 官方建议控制在 200 行以内）；较长的流程做成按需加载的 Skill；团队维护一份共享说明，放进新项目的脚手架模板；第三方 Skill 先审再用。
-- **依据**：Thoughtworks 雷达“[智能体指令膨胀](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)”（谨慎）、“[渐进式上下文披露](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)”（试用）、“[团队共享的智能体说明](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)”（采用）；《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》“Keep CLAUDE.md short”。
+- **依据**：Thoughtworks 雷达“[智能体指令膨胀](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)”（谨慎）、“[渐进式上下文披露](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)”（采用）、“[团队共享的智能体说明](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)”（采用）；《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》“Keep CLAUDE.md short”。第 35 期补充：能写成确定性 hook 或检查的规则先改写；每换一代模型就重新评估、删掉不再需要的规则。
 - **自查**：你的 AGENTS.md 有多少行？上次删减是什么时候？
 
 ### 12. 长流程要能断点续跑
@@ -129,7 +129,7 @@
 ### 13. 管好 AI 供应链
 
 - **怎么做**：锁定依赖版本（SDK、网关、MCP 服务器、Skills、插件），升级前看变更说明；只从可信来源安装 Skills 和插件，上线前用扫描工具检查；开发机和 CI 上的密钥最小化，出事时能快速全部轮换。
-- **依据**：2026-03-24，LiteLLM 有两个 PyPI 版本被投毒，会窃取凭证（[官方说明](https://docs.litellm.ai/blog/security-update-march-2026)）；Thoughtworks 雷达提醒，未经审查复用第三方 Skill 有严重的供应链风险，并把扫描工具 [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) 列为“评估”。
+- **依据**：2026-03-24，LiteLLM 有两个 PyPI 版本被投毒，会窃取凭证（[官方说明](https://docs.litellm.ai/blog/security-update-march-2026)）；Thoughtworks 雷达提醒，未经审查复用第三方 Skill 有严重的供应链风险，并把扫描工具 [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) 列为“评估”（第 34 期）；第 35 期又把“[对智能体 Skill 的认知投降](https://www.thoughtworks.com/radar/techniques/agent-skill-cognitive-surrender)”（不加理解就整套引入社区 Skill 库）列为“谨慎”。
 - **自查**：你用的某个 AI 依赖如果今天被投毒，你多久能知道？多久能轮换完所有密钥？
 
 ---
@@ -168,7 +168,7 @@
 ### 6. 按工作选人机协作方式，别一律“全自动”
 
 - **怎么做**：微软 2026 报告把人与智能体的协作分为委派、协作、询问、探索四种方式，并按“人主导还是人监督”“智能体是助手还是队友”两个维度区分。每条工作流先判断适合哪种，而不是默认都做成多智能体自动编排。
-- **依据**：同上微软报告。
+- **依据**：同上微软报告。Thoughtworks 雷达第 35 期把“[人在回路的表演](https://www.thoughtworks.com/radar/techniques/human-in-the-loop-theater)”列为“谨慎”、“[按风险分级的人工监督](https://www.thoughtworks.com/radar/techniques/risk-tiered-human-oversight)”列为“试用”：只把人能真正判断的决定留给人审，其余靠自动化检查把关。
 
 ### 7. 在利润表里衡量，并持续再培训
 
@@ -185,7 +185,7 @@
 
 - **事实**：DORA 2025 年报告（近 5,000 名技术从业者）显示，采用 AI 已能提高软件交付吞吐量，但仍会增加交付的不稳定性；Thoughtworks 雷达把“用代码产出量衡量生产率”列为“谨慎”：用代码行数、PR 数考核，会催生大量审不过来的代码，评审周期反而变长。
 - **怎么做**：研发团队用 DORA 指标（变更前置时间、部署频率、恢复时间、变更失败率、返工率）加“一次通过率”（AI 产出不用大改就能用的比例）衡量，按团队而不是按个人统计；非研发团队看业务结果（处理时长、差错率、客户满意度），不看“AI 使用次数”。
-- **依据**：[DORA 2025 State of AI-assisted Software Development](https://dora.dev/research/2025/dora-report/)；Thoughtworks 雷达“[DORA 指标](https://www.thoughtworks.com/radar/techniques/dora-metrics)”（采用）、“[用代码产出量衡量生产率](https://www.thoughtworks.com/radar/techniques/coding-throughput-as-a-measure-of-productivity)”（谨慎）。
+- **依据**：[DORA 2025 State of AI-assisted Software Development](https://dora.dev/research/2025/dora-report/)；Thoughtworks 雷达“[DORA 指标](https://www.thoughtworks.com/radar/techniques/dora-metrics)”（采用）、“[用代码产出量衡量生产率](https://www.thoughtworks.com/radar/techniques/coding-throughput-as-a-measure-of-productivity)”（谨慎；第 35 期点名“AI 生成代码占比”“消耗的 token 数”同样不能当目标）、“[交付路径梳理](https://www.thoughtworks.com/radar/techniques/path-to-production-mapping)”（采用；写代码变快后，瓶颈会转到评审和发布环节）。
 
 ### 10. 把影子 AI 引进有护栏的沙盒
 
@@ -211,6 +211,6 @@
 
 ## 五、来源
 
-- 技术：[AAIF](https://aaif.io/) · [MCP 2026-07-28 规范](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [A2A](https://a2a-protocol.org/) · [Agent Skills](https://agentskills.io/) · [AGENTS.md](https://agents.md/) · Anthropic Engineering（[运行框架](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)、[长时应用的运行框架设计](https://www.anthropic.com/engineering/harness-design-long-running-apps)、[智能体评估](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)、[工具设计](https://www.anthropic.com/engineering/writing-tools-for-agents)、[多智能体研究系统](https://www.anthropic.com/engineering/multi-agent-research-system)、[上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)、[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)、[高级工具调用](https://www.anthropic.com/engineering/advanced-tool-use)、[代码执行与 MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)、[评估中的基础设施噪声](https://www.anthropic.com/engineering/infrastructure-noise)、[托管智能体架构](https://www.anthropic.com/engineering/managed-agents)、[智能体隔离](https://www.anthropic.com/engineering/how-we-contain-claude)） · [OWASP 智能体十大风险](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) · [Thoughtworks 技术雷达第 34 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf) · [LiteLLM 供应链事件说明](https://docs.litellm.ai/blog/security-update-march-2026)
+- 技术：[AAIF](https://aaif.io/) · [MCP 2026-07-28 规范](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [A2A](https://a2a-protocol.org/) · [Agent Skills](https://agentskills.io/) · [AGENTS.md](https://agents.md/) · Anthropic Engineering（[运行框架](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)、[长时应用的运行框架设计](https://www.anthropic.com/engineering/harness-design-long-running-apps)、[智能体评估](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)、[工具设计](https://www.anthropic.com/engineering/writing-tools-for-agents)、[多智能体研究系统](https://www.anthropic.com/engineering/multi-agent-research-system)、[上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)、[Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)、[高级工具调用](https://www.anthropic.com/engineering/advanced-tool-use)、[代码执行与 MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)、[评估中的基础设施噪声](https://www.anthropic.com/engineering/infrastructure-noise)、[托管智能体架构](https://www.anthropic.com/engineering/managed-agents)、[智能体隔离](https://www.anthropic.com/engineering/how-we-contain-claude)） · [OWASP 智能体十大风险](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) · [Thoughtworks 技术雷达第 35 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/11/tr_technology_radar_vol_35_en.pdf)（上一期：[第 34 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf)） · [LiteLLM 供应链事件说明](https://docs.litellm.ai/blog/security-update-march-2026)
 - 战略：[BCG（2026-09-30）](https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value) · [Deloitte（2026-01-21）](https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html) · [Microsoft Work Trend Index 2026](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization) · [State of AI Report 2026](https://www.stateof.ai/) · [Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report) · [DORA 2025](https://dora.dev/research/2025/dora-report/) · [DORA ROI 报告](https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development)
 - 合规：见 [AI 合规时间线](ai-regulation-tracker.md)
