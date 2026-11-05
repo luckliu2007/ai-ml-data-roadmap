@@ -85,7 +85,7 @@
 - MIT NANDA《The GenAI Divide: State of AI in Business 2025》（[Fortune 报道](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)）：被广泛引用的“95% 试点没有可衡量回报”出自这份初步研究。报告把原因归结为与业务流程整合不足，而不是模型能力不够，并发现回报最高的往往是后台流程自动化，而非预算最多的销售营销工具。注意这是初步研究，不宜当成普遍失败率引用。
 - 2026 年的新证据：Deloitte 2026 显示只有 25% 的企业把 40% 以上的试点投入了生产；微软 2026 年报告显示 65% 的员工担心不用 AI 会落后，但只有 13% 觉得用 AI 重塑工作会得到奖励。结论是一样的：**卡点在组织，不在技术**。见 [2026 AI 最佳实践](../best-practices-2026.md#三战略最佳实践给管理者) 第 3、5 条。
 - [DORA 2025 State of AI-assisted Software Development](https://dora.dev/research/2025/dora-report/)（Google DORA 团队，近 5,000 名技术从业者）：AI 是“放大器”，放大强组织的长处，也放大弱组织的问题；提出放大 AI 效果的七项基础能力，包括清晰并广泛传达的 AI 政策、健康的数据生态、高质量的内部平台。2026 年的 [ROI 报告](https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development)补充：多数组织会先经历一段生产率下降（J 曲线），别在低谷期砍项目。虽然研究对象是软件团队，结论对其他职能同样有参考价值。
-- 衡量提效的陷阱：Thoughtworks 技术雷达把“用代码产出量衡量生产率”“AI 加速的影子 IT”列为“谨慎”，见 [AI 技术雷达](../tech-radar-2026.md#谨慎七个反模式)和 [2026 AI 最佳实践](../best-practices-2026.md#三战略最佳实践给管理者)第 9–11 条。
+- 衡量提效的陷阱：Thoughtworks 技术雷达第 35 期继续把“用代码产出量衡量生产率”“AI 加速的影子 IT”列为“谨慎”，并新增“人在回路的表演”（让人批准根本没法认真评估的改动），见 [AI 技术雷达](../tech-radar-2026.md#谨慎十二个反模式)和 [2026 AI 最佳实践](../best-practices-2026.md#三战略最佳实践给管理者)第 9–11 条。
 
 🛠️ 动手
 - 选模块 3 排名前 2 的用例，用[试点立项书](../templates/pilot-charter.md)各写一份试点方案：负责人、团队构成（业务专家 + 技术 + 数据）、4–8 周目标、成功 / 停止标准、成功后由谁上线和预算从哪来、需要改变的流程和考核。

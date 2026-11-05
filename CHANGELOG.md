@@ -1,5 +1,16 @@
 # 更新日志
 
+## 2026-11-05 · 技术雷达第 35 期升级
+
+- `tech-radar-2026.md`：依据 Thoughtworks 技术雷达第 35 期（2026-11，117 个条目）原文更新，核实日期改为 2026-11-05
+  - 分档变化 7 条：渐进式上下文披露（试用 → 采用）、变异测试（试用 → 采用）、OpenAI Codex（试用 → 采用）、OpenCode（评估 → 采用）、小语言模型（评估 → 试用）、有毒数据流分析（评估 → 试用）、OpenSpec（评估 → 试用）；另有 LiteLLM 由语言与框架移到平台，分档仍为试用
+  - 新增 15 条：智能体沙盒、威胁建模、交付路径梳理（采用）；智能体插件市场、开源权重模型、按风险分级的人工监督、有状态护栏、用子智能体管理上下文、Promptfoo、Presidio（试用）；人在回路的表演、一律用前沿模型、对智能体 Skill 的认知投降、AI 驱动的文档泛滥、朴素的上下文压缩（谨慎，反模式由 7 个增至 12 个，标题锚点改为 `#谨慎十二个反模式`）
+  - 第 35 期未再列出 41 条，保留并注明：上下文工程、团队共享的智能体说明、结构化输出、DORA 指标、零信任架构、Agent Skills、编程智能体的反馈传感器、编程智能体沙盒执行（已扩展为智能体沙盒）、语义层、编程智能体小队、RAG 中按角色隔离上下文、用视觉语言模型端到端解析文档、衡量与编程智能体的协作质量、Skills 作为可执行的入职文档、代码库认知债、编程智能体蜂群、忽视智能体工作流的持久性、默认使用 MCP、Claude Code、Cursor、Claude Code 插件市场（已泛化为智能体插件市场）、Dev Containers、PageIndex、Agent Scan、Bloom、OpenClaw、Langfuse、AWS Bedrock AgentCore、AG-UI 协议、Graphiti、MCP Apps、Agent Trace、Docling、DeepEval、LangGraph、ADK、LangExtract、GitHub Spec Kit、Superpowers、Pipecat、Unsloth；原文没有说其中任何一条已被取代或不再推荐，因此没有删除
+  - 第五节换成第 35 期的四个主题（规模化的运行框架工程、不只用前沿模型、让更多智能体干活、建设 AI 工厂），第 34 期主题压缩为一句话
+- `best-practices-2026.md`：第一部分第 7 项改为第 35 期的反模式和“采用”条目；构建者第 7、9、10、11、13 条和管理者第 6、9 条的依据按第 35 期更新分档并补充新判断
+- `tracks/app-builder.md`（模块 1、3）、`tracks/leader.md`（模块 4，锚点同步）、`templates/model-selection-scorecard.md`、`README.md`、`resources.md`：期号、分档、反模式数量和 PDF 链接改为第 35 期
+- `ROADMAP.md`：新增本次升级小节，持续跟踪表的技术雷达一行改为第 35 期已收录
+
 ## 2026-10-30
 
 - `ai-regulation-tracker.md`、`resources.md`：《智能体规范应用与创新发展实施意见》改链到国家网信办全文（原为新华网报道和深圳市司法局转载），补充第 6、7、9、11 条要点

@@ -16,7 +16,7 @@
 - [Artificial Analysis](https://artificialanalysis.ai/)：独立第三方对各家模型质量、速度、价格的横向评测。
 - [LMArena 排行榜](https://lmarena.ai/leaderboard)：基于大量真人盲评的模型排名。
 - 各家官方文档的模型概览页（Claude / OpenAI / Gemini / DeepSeek / 通义千问），重点看上下文长度、价格、是否支持工具调用和多模态。
-- 别忽略开源权重模型和小模型：Thoughtworks 技术雷达第 34 期把[小语言模型](https://www.thoughtworks.com/radar/techniques/small-language-models)列为“评估”，在摘要、基础编码等任务上，小模型的性价比已开始超过大模型；数据不能出境或必须本地部署时，开源权重模型往往是首选。
+- 别忽略开源权重模型和小模型：Thoughtworks 技术雷达第 35 期把[小语言模型](https://www.thoughtworks.com/radar/techniques/small-language-models)由“评估”升为“试用”（摘要、结构化抽取、意图分类、基础编码等窄任务，小模型更便宜、延迟更低），并新增[开源权重模型](https://www.thoughtworks.com/radar/techniques/open-weight-models)（试用）、把“[一律用前沿模型](https://www.thoughtworks.com/radar/techniques/blanket-frontier-model-usage)”列为“谨慎”；数据不能出境或必须本地部署时，开源权重模型往往是首选。
 
 🛠️ 动手
 - 选 5 个你工作中的真实任务（例如总结会议纪要、写 SQL、改合同条款），在 3 个不同模型上（至少一个开源权重模型或小模型）各跑一遍，用[模型选型评分卡](../templates/model-selection-scorecard.md)记录质量、稳定性、成本和延迟。
@@ -54,7 +54,7 @@
 📖 必读
 - Anthropic《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》：三条主线是告诉它代码里看不到的信息（说明文件要短，建议 200 行以内）、给它一个可以运行的检查、用 hooks 和权限强制执行不能有例外的规则。思路适用于所有编程智能体。
 - [AGENTS.md](https://agents.md/)：写给编程智能体看的项目说明文件（开放格式，现由 AAIF 托管）：项目结构、构建和测试命令、代码规范。不管用哪家编程智能体，每个仓库都应该有一份。
-- Thoughtworks 技术雷达第 34 期的编程智能体实践（汇总见本仓库 [AI 技术雷达](../tech-radar-2026.md)）：[反馈传感器](https://www.thoughtworks.com/radar/techniques/feedback-sensors-for-coding-agents)（把编译、lint、测试接进智能体的工作循环，试用）、[沙盒执行](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents)（默认在隔离环境里运行，试用）、[智能体指令膨胀](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)（说明越写越长，规则反而被忽略，谨慎）。想先写规格再让智能体实现，可以试 [OpenSpec](https://github.com/Fission-AI/OpenSpec) 或 [GitHub Spec Kit](https://github.com/github/spec-kit)。
+- Thoughtworks 技术雷达的编程智能体实践（汇总见本仓库 [AI 技术雷达](../tech-radar-2026.md)）：[反馈传感器](https://www.thoughtworks.com/radar/techniques/feedback-sensors-for-coding-agents)（把编译、lint、测试接进智能体的工作循环，第 34 期试用）、[智能体沙盒](https://www.thoughtworks.com/radar/techniques/agent-sandboxing)（第 35 期由编程智能体沙盒执行扩展到所有智能体，采用）、[用子智能体管理上下文](https://www.thoughtworks.com/radar/techniques/subagents-for-better-context-management)（第 35 期试用）、[智能体指令膨胀](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)（说明越写越长，规则反而被忽略，谨慎）。想先写规格再让智能体实现，可以试 [OpenSpec](https://github.com/Fission-AI/OpenSpec)（第 35 期升为试用）或 [GitHub Spec Kit](https://github.com/github/spec-kit)。
 - 主流开源 / 官方编程智能体，任选一个上手：[Claude Code](https://github.com/anthropics/claude-code)、[OpenAI Codex CLI](https://github.com/openai/codex)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)。
 
 🛠️ 动手
