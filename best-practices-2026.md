@@ -117,13 +117,13 @@
 ### 11. 说明文件要短、要手写、按需加载
 
 - **怎么做**：AGENTS.md / CLAUDE.md 只写智能体从代码里看不出来的东西（构建和测试命令、关键约定、注意事项），定期删减（Claude Code 官方建议控制在 200 行以内）；较长的流程做成按需加载的 Skill；团队维护一份共享说明，放进新项目的脚手架模板；第三方 Skill 先审再用。
-- **依据**：Thoughtworks 雷达“[智能体指令膨胀](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)”（谨慎）、“[渐进式上下文披露](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)”（采用）、“[团队共享的智能体说明](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)”（采用）；《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》“Keep CLAUDE.md short”。第 35 期补充：能写成确定性 hook 或检查的规则先改写；每换一代模型就重新评估、删掉不再需要的规则。
+- **依据**：Thoughtworks 雷达“[智能体指令膨胀](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)”（谨慎）、“[渐进式上下文披露](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)”（采用）、“[团队共享的智能体说明](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)”（采用）；《[Claude Code best practices](https://code.claude.com/docs/en/best-practices)》“Keep CLAUDE.md short”。第 35 期补充：能写成确定性 hook 或检查的规则先改写；每换一代模型就重新评估、删掉不再需要的规则。第 35 期还把“[反馈飞轮](https://www.thoughtworks.com/radar/techniques/feedback-flywheel)”升为试用：每次会话结束问一句共享说明要不要改，由团队复盘决定增删。
 - **自查**：你的 AGENTS.md 有多少行？上次删减是什么时候？
 
 ### 12. 长流程要能断点续跑
 
 - **怎么做**：跑几小时以上、或中途要等人审批的流程，用智能体框架自带的持久化执行保存进度和每一次工具调用；会话日志存在模型上下文之外，崩溃后从日志恢复；流程越关键，越要考虑 Temporal 等专门的持久化执行平台。
-- **依据**：Thoughtworks 雷达“[忽视智能体工作流的持久性](https://www.thoughtworks.com/radar/techniques/ignoring-durability-in-agent-workflows)”（谨慎）；Anthropic《[Scaling Managed Agents](https://www.anthropic.com/engineering/managed-agents)》（2026-04）把智能体拆成会话日志、运行框架、沙盒三部分，任何一部分崩溃都可以替换，并从日志恢复。
+- **依据**：Thoughtworks 雷达“[忽视智能体工作流的持久性](https://www.thoughtworks.com/radar/techniques/ignoring-durability-in-agent-workflows)”（谨慎）；Anthropic《[Scaling Managed Agents](https://www.anthropic.com/engineering/managed-agents)》（2026-04）把智能体拆成会话日志、运行框架、沙盒三部分，任何一部分崩溃都可以替换，并从日志恢复。Thoughtworks 雷达第 35 期把持久化执行平台 [Temporal](https://www.thoughtworks.com/radar/platforms/temporal)、[Restate](https://www.thoughtworks.com/radar/platforms/restate) 升为试用。
 - **自查**：任务跑到第 3 个小时网络断了，会发生什么？
 
 ### 13. 管好 AI 供应链

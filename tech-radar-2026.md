@@ -1,6 +1,6 @@
 # AI 技术雷达（2026）
 
-**核实日期：2026-11-05。** 依据 Thoughtworks 技术雷达[第 35 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/11/tr_technology_radar_vol_35_en.pdf)（2026-11，共 117 个条目）原文，只挑出与本仓库两条路线有关的 AI 条目；上一期是[第 34 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf)（2026-04，共 118 个条目）。“分档”是 Thoughtworks 交付团队的判断；“怎么用”一列是本仓库的建议，并指向对应模块。第 35 期没有再列出的第 34 期条目仍然保留，并注明“第 35 期未再列出”：Thoughtworks 会给新条目腾位置，不再列出不代表过时。Thoughtworks 每年春秋各发一期，第 36 期（预计 2027 年春季）发布后按新版更新本文。
+**核实日期：2026-11-06。** 依据 Thoughtworks 技术雷达[第 35 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/11/tr_technology_radar_vol_35_en.pdf)（2026-11，共 117 个条目）原文，只挑出与本仓库两条路线有关的 AI 条目；上一期是[第 34 期](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf)（2026-04，共 118 个条目）。“分档”是 Thoughtworks 交付团队的判断；“怎么用”一列是本仓库的建议，并指向对应模块。第 35 期没有再列出的第 34 期条目仍然保留，并注明“第 35 期未再列出”：Thoughtworks 会给新条目腾位置，不再列出不代表过时。Thoughtworks 每年春秋各发一期，第 36 期（预计 2027 年春季）发布后按新版更新本文。
 
 > 雷达是一家咨询公司的一线经验，不是标准。和你自己的评估结果冲突时，以你的评估集为准（见 [评估计划模板](templates/eval-plan.md)）。
 
@@ -38,18 +38,27 @@
 | [按风险分级的人工监督](https://www.thoughtworks.com/radar/techniques/risk-tiered-human-oversight) | 试用（第 35 期新增） | 评审深度跟改动可能造成的后果挂钩：最高风险、最难回滚的改动由人亲自做，中等风险走人工评审，低风险由智能体通过 CI 自动合并；可按目录划“高风险区”，或用大模型给改动分级 | 模块 3；[管理者路线模块 5](tracks/leader.md#模块-5--风险治理与合规第-67-周)；[智能体授权与管控清单](templates/agent-governance-checklist.md) |
 | [有状态护栏](https://www.thoughtworks.com/radar/techniques/stateful-guardrails) | 试用（第 35 期新增） | 护栏不只检查单条消息，而是看最近几轮对话，并在整个会话里累计“警告 / 封禁”状态，识别逐步展开的越狱和提示词套取；会增加延迟和成本，阈值要调 | [应用路线模块 6](tracks/app-builder.md#模块-6--评估驱动的产品化第-1011-周) |
 | [用子智能体管理上下文](https://www.thoughtworks.com/radar/techniques/subagents-for-better-context-management) | 试用（第 35 期新增） | 把探索、工具输出、重试交给子智能体，主会话只收一段摘要，保护主智能体的上下文；一次跑两到四个，窄任务可用更便宜的模型。收益还没有系统测量，要看主会话的上下文是否真的变小 | 模块 2、[应用路线模块 5](tracks/app-builder.md#模块-5--智能体工具与工作流第-89-周) |
+| [追问](https://www.thoughtworks.com/radar/techniques/grilling) | 试用（第 35 期新增） | 让编程智能体动手前先就计划向你提问，把意图不明确的地方问清楚，而不是自己猜；你也被迫审视自己的假设，对实施计划理解得更透，结论可以记进决策记录，有助于缓解“认知债”。最知名的实现在 mattpocock/skills（见下方工具表） | [应用路线模块 3](tracks/app-builder.md#模块-3--ai-编程智能体第-45-周)；[AI 时代怎么学](https://github.com/luckliu2007/github-learning-resources/blob/main/ai-era-learning.md) 第 4 条 |
+| [无人值守的夜间智能体构建](https://www.thoughtworks.com/radar/techniques/unattended-overnight-agentic-builds) | 试用（第 35 期新增） | 下班前把一个功能级的任务交给编程智能体，第二天早上审查结果；一个智能体就够，不需要蜂群。有前提：沙盒执行、事先写好规格、有反馈传感器让它自己纠错；一晚的产出太大，逐行审不过来，要靠经过检验的运行框架来验证。基础不具备的团队，把它当作补齐基础的目标 | 模块 3 进阶；先对照本页“智能体沙盒”“变异测试” |
+| [智能体维护的知识库](https://www.thoughtworks.com/radar/techniques/agent-maintained-knowledge-bases) | 试用（第 35 期新增） | 团队把共享知识放在互相链接的纯文本文件里（常用 Obsidian），由编程智能体维护、Git 管版本；做法参考 Karpathy 的 LLM Wiki：原始资料只读，维基由智能体维护，再用一份结构说明约束它怎么改。生成的内容会偏离事实，没人定期校对就会变成“AI 驱动的文档泛滥” | [应用路线模块 4](tracks/app-builder.md#模块-4--知识库与-rag第-67-周) |
+| [托管智能体运行时](https://www.thoughtworks.com/radar/techniques/managed-agents-runtime) | 试用（第 35 期新增） | 不在开发者电脑上跑智能体，而放到专门的平台上：平台提供沙盒算力、触发器、凭据管理、会话状态和可观测性，团队只定义模型、提示、工具和 Skills；适合从 Issue、流水线或定时任务领活、最后提 PR 的后台智能体。Cursor 云端智能体、GitHub Copilot 编程智能体、OpenAI Codex 云任务都走这条路，也可以自托管；要按生产基础设施来管 | [应用路线模块 5](tracks/app-builder.md#模块-5--智能体工具与工作流第-89-周)；最佳实践构建者第 12 条 |
 | [小语言模型](https://www.thoughtworks.com/radar/techniques/small-language-models) | 试用（第 35 期由评估改为试用） | 摘要、结构化抽取、意图分类、基础编码这类窄而高频的任务，小模型更便宜、延迟更低；除非需要多步推理或可靠的工具调用，智能体场景也可以先考虑小模型 | [应用路线模块 1](tracks/app-builder.md#模块-1--模型认知与选型第-1-周) |
 | [有毒数据流分析](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) | 试用（第 35 期由评估改为试用） | 找出“能读私密数据 + 会接触不可信内容 + 能对外发送”三者同时具备的路径（Simon Willison 所说的[“致命三要素”](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)），在被利用前切断；暗藏外泄指令的恶意 Skill 也在此列 | 模块 6 安全实践 |
+| [反馈飞轮](https://www.thoughtworks.com/radar/techniques/feedback-flywheel) | 试用（第 35 期由评估改为试用） | 智能体出错后，个人改了 AGENTS.md 或 Skill，团队却未必知道。每次会话结束问一句“共享的说明要不要改”，再在团队复盘里决定改什么；反馈传感器能显示哪些检查总在失败。飞轮既要加也要删：只增不减的规则会变成指令膨胀，只产生噪音的传感器要去掉 | 模块 3；最佳实践构建者第 11 条 |
 | 编程智能体小队 | 评估（第 34 期；第 35 期未再列出） | 少量分工明确的智能体（实现、评审等）由一个编排者协调；与“蜂群”不同，后者见下方“谨慎”。第 35 期认为，多数人先在自己掌控下并行跑几个会话，是更稳妥的起点 | 模块 3 进阶 |
-| [MITRE ATLAS](https://atlas.mitre.org/) | 评估 | 针对 AI 系统的攻击战术与技术知识库，给威胁建模提供共同的词汇 | 模块 6 安全实践 |
+| [MITRE ATLAS](https://atlas.mitre.org/) | 评估（第 34、35 期均为评估） | 针对 AI 系统的攻击战术与技术知识库，给威胁建模提供共同的词汇 | 模块 6 安全实践 |
 | RAG 中按角色隔离上下文 | 评估（第 34 期；第 35 期未再列出） | 建索引时给每个文本块打上权限标签，检索时按用户身份过滤，模型根本拿不到无权查看的内容 | [应用路线模块 4](tracks/app-builder.md#模块-4--知识库与-rag第-67-周) |
 | 用视觉语言模型端到端解析文档 | 评估（第 34 期；第 35 期未再列出） | 用专门训练的视觉语言模型直接把文档图像转成结构化内容，替代“版面检测 + OCR + 后处理”多段流水线 | 模块 4 |
 | 衡量与编程智能体的协作质量 | 评估（第 34 期；第 35 期未再列出） | 别掉进“速度陷阱”：看一次通过率、每个任务的来回次数、合并后的返工、构建失败和评审负担；按团队而不是按个人统计，并和 DORA 指标一起看 | 管理者路线模块 4 |
 | Skills 作为可执行的入职文档 | 评估（第 34 期；第 35 期未再列出） | 用一个 `/_setup` 之类的 Skill 代替“README + 安装脚本”，让新人（和智能体）按当前环境一步步完成初始化 | 模块 5 |
+| [运行框架质量评估](https://www.thoughtworks.com/radar/techniques/harness-quality-evaluation) | 评估（第 35 期新增） | Skills、插件、AGENTS.md、护栏只有真起作用才有价值：确定性的护栏配一套测试，按 TDD 方式开发；不确定的部分（插件、Skill）用 PluginEval 这类工具评估；按夜间或随 CI 定期跑 | 模块 3、6；[评估计划模板](templates/eval-plan.md) |
+| [程序化工具调用](https://www.thoughtworks.com/radar/techniques/programmatic-tool-calling) | 评估（第 35 期新增） | 模型不再一次调一个工具，而是写一段代码把多次调用串起来，在执行环境里循环、过滤，只把需要的结果放回上下文；Anthropic 叫 programmatic tool calling，Cloudflare 叫 Code Mode。这样会降低客户端逐项审批的粒度，授权必须由服务端和工具本身把关 | [应用路线模块 5](tracks/app-builder.md#模块-5--智能体工具与工作流第-89-周)；最佳实践构建者第 2 条 |
+| [本地编程模型](https://www.thoughtworks.com/radar/techniques/local-coding-models) | 评估（第 35 期新增；2025 年曾因模型能力不足把本地编程助手列为谨慎） | 能在本机跑的开源权重模型（如 Qwen3.8-27B）已能胜任代码库索引、日志解析与摘要、初步编码、审查 Git diff 等不需要前沿模型的工作：省云端 token 费用，适合长时间后台处理，也能离线兜底 | 模块 1；[模型选型评分卡](templates/model-selection-scorecard.md) |
+| [企业级运行框架](https://www.thoughtworks.com/radar/techniques/enterprise-harness) | 评估（第 35 期新增） | 多个团队用上编程智能体后，需要一层全组织共享的内容：Skills、工具、内部上下文连接器、批准的技术栈、架构决策记录、发布指引、hooks 和安全策略，相当于给智能体用的开发者平台。业界还没有共识：保持轻量、联邦式，通过开放标准和插件市场分发 | [管理者路线模块 4](tracks/leader.md#模块-4--从试点到规模化组织与人才第-5-周) |
 
-### 谨慎：十二个反模式
+### 谨慎：十四个反模式
 
-这一组最值得管理者和构建者一起读，可以直接当作自查清单。前 7 个来自第 34 期，后 5 个是第 35 期新增：
+这一组最值得管理者和构建者一起读，可以直接当作自查清单。前 7 个来自第 34 期，后 7 个是第 35 期新增：
 
 | 反模式 | 问题是什么 | 对策 |
 | --- | --- | --- |
@@ -65,6 +74,8 @@
 | [对智能体 Skill 的认知投降](https://www.thoughtworks.com/radar/techniques/agent-skill-cognitive-surrender)（第 35 期新增） | 不加理解就整套引入大型社区 Skill 库或重型智能体框架：团队看不懂系统在做什么，未经审查的指令会进入执行流水线，不同来源的 Skill 还可能互相冲突 | 先读、先审，再改编使用；模型越来越强，通用社区 Skill 可能变得多余，更值得积累贴合项目的领域 Skill |
 | [AI 驱动的文档泛滥](https://www.thoughtworks.com/radar/techniques/ai-driven-documentation-sprawl)（第 35 期新增） | 用智能体和规格驱动工具批量生成 Markdown 文档，看起来专业、进展很快，但没有质量门禁；过时、矛盾的规格和 ADR 会占用智能体的上下文并把它带偏 | 把 Markdown 当作一等产物，安排人定期删减、合并、修订，让智能体读到的上下文简洁、准确、可信 |
 | [朴素的上下文压缩](https://www.thoughtworks.com/radar/techniques/naive-context-compression)（第 35 期新增） | 为省 token 粗暴压缩提示：可能打断提示缓存，账单反而更高；丢失信息让智能体变笨；用大模型做摘要式压缩又增加延迟和成本 | 先分析上下文到底花在哪，再同时评估净成本和任务准确率；优先选只压缩工具输出、保留原始数据引用、只在任务边界一次性裁剪历史的工具 |
+| [人肉转发](https://www.thoughtworks.com/radar/techniques/meat-proxy)（第 35 期新增） | 不看、不核实、不加判断，就把大模型的输出原样转给同事：核实的负担被推给下游，自己逃掉了对质量的责任。和“人在回路的表演”类似，只不过那是假审批，这是假署名 | 转发 AI 生成的内容前，自己先读、核实，并加上自己的判断；把这一条写进团队的 AI 使用规范 |
+| [堆叠 PR](https://www.thoughtworks.com/radar/techniques/stacked-pull-requests)（第 35 期新增） | AI 编程普及后流行起来：把一个大改动拆成一串互相依赖的小 PR，每个 PR 以下面那个为目标分支，评审负担更小，GitHub 也已原生支持。问题在于它常被用来掩盖事前拆分不足，习惯性堆叠容易变成写一个巨大改动的借口 | 先把工作写清、拆小、估好规模，作为彼此独立的小单元交付；堆叠只作为例外 |
 
 ---
 
@@ -79,6 +90,8 @@
 | Claude Code 插件市场 | 试用（第 34 期；第 35 期未再列出，已泛化为上方的“智能体插件市场”） | 用插件给团队分发 Skills、命令等配置 | 模块 3、5 |
 | Dev Containers | 试用（第 34 期；第 35 期未再列出） | 用容器给编程智能体提供隔离环境 | 模块 3 |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec) | 试用（第 35 期由评估改为试用） | 轻量的规格驱动开发框架，适用于各种编程智能体；尤其擅长给已有代码库补写规格，每次改动都是对一份持续维护的规格的增量，智能体产出更可预期。规格文件仍要有人维护 | 模块 3（已收录） |
+| [Agent Package Manager](https://www.thoughtworks.com/radar/tools/agent-package-manager)（[GitHub](https://github.com/microsoft/apm)） | 试用（第 35 期新增） | 智能体配置的依赖管理器：用清单声明插件、Skills、说明和 MCP 服务器，从 Git 仓库或插件市场安装；锁文件记录内容哈希和来源，可导出 SBOM，会扫描可能劫持智能体行为的隐藏 Unicode 字符，策略文件限定来源和范围。仍在 1.0 之前 | 模块 3、5；最佳实践构建者第 13 条；[资源总表](resources.md)（已收录） |
+| [mattpocock/skills](https://www.thoughtworks.com/radar/tools/mattpocock-skills)（[GitHub](https://github.com/mattpocock/skills)） | 试用（第 35 期新增） | 一组面向智能体软件工程的 Skills，小、易改、可组合，帮团队把好的工程实践带进智能体编程，“追问”最知名的实现就在这里。Thoughtworks 同时提醒：不要不加评估就整套引入（见反模式“对智能体 Skill 的认知投降”） | 模块 3 |
 | [PageIndex](https://github.com/VectifyAI/PageIndex) | 评估（第 34 期；第 35 期未再列出） | 无向量、基于推理的长文档检索 | 模块 4（已收录） |
 | [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan)（[GitHub](https://github.com/snyk/agent-scan)） | 评估（第 34 期；第 35 期未再列出） | 扫描本机的 MCP 服务器和 Skills，发现提示注入、工具投毒、有毒数据流、硬编码密钥等风险；扫描时要把组件元数据发给 Snyk，误报率需在自己环境中验证。第 35 期在“有毒数据流分析”中提到已成功用它做分析 | 模块 6 安全实践 |
 | Bloom | 评估（第 34 期；第 35 期未再列出） | Anthropic 推出的行为评估工具：按设定的目标行为自动生成大量测试对话，检测模型的谄媚、自保等倾向 | 模块 6 进阶 |
@@ -89,6 +102,8 @@
 | 条目 | 分档 | 一句话 | 怎么用 |
 | --- | --- | --- | --- |
 | [LiteLLM](https://www.thoughtworks.com/radar/platforms/litellm)（[GitHub](https://github.com/BerriAI/litellm)） | 试用（第 35 期由语言与框架移到平台，分档不变） | 开源 AI 网关：支持 100 多家模型提供商，提供路由、协议转换、鉴权、预算和护栏；Thoughtworks 现在把它看作基础设施而不是库。没升到“采用”主要是安全原因：今年已报告 25 个以上 CVE，要及时打补丁；2026-03 还曾发生 PyPI 供应链投毒，见[官方说明](https://docs.litellm.ai/blog/security-update-march-2026)。用了某家独有的功能，又会重新绑定到这家 | 模块 6 进阶 |
+| [Temporal](https://www.thoughtworks.com/radar/platforms/temporal)（[GitHub](https://github.com/temporalio/temporal)） | 试用（第 35 期重新列入，由评估改为试用） | 持久化执行平台：重试、中间状态持久化、超时、人工审批检查点、断点续跑，执行进度可见；有开源自托管版和托管云服务。Thoughtworks 用它构建内部开发者平台和 AI 云基础设施的控制面 | 反模式“忽视智能体工作流的持久性”；最佳实践构建者第 12 条 |
+| [Restate](https://www.thoughtworks.com/radar/platforms/restate)（[GitHub](https://github.com/restatedev/restate)） | 试用（第 35 期由评估改为试用） | 同类的持久化执行平台：记录每一步执行，服务失败后从断点继续，服务间通信保证恰好一次；适合要等人审批、或要对老系统反复重试的长流程。SDK 是 MIT 许可，服务端是 BSL 许可，不能拿来对外提供托管服务 | 同上 |
 | [Langfuse](https://www.thoughtworks.com/radar/platforms/langfuse)（[GitHub](https://github.com/langfuse/langfuse)） | 试用（第 34 期；第 35 期未再列出） | 开源 LLM 工程平台：追踪、提示管理、评估、数据集；SDK 基于 OpenTelemetry。自托管组件较多，先评估规模是否值得 | [应用路线模块 6](tracks/app-builder.md#模块-6--评估驱动的产品化第-1011-周) |
 | AWS Bedrock AgentCore | 试用（第 34 期；第 35 期未再列出） | 云上的智能体运行平台；更成功的做法是只用它处理会话隔离、安全、可观测等生产问题，业务逻辑留在自己的代码里 | 模块 5 进阶 |
 | AG-UI 协议 | 试用（第 34 期；第 35 期未再列出） | 统一前端界面和后端智能体之间的通信：流式推理步骤、状态同步、动态组件 | 模块 5 |
@@ -104,6 +119,7 @@
 | [DeepEval](https://www.thoughtworks.com/radar/languages-and-frameworks/deepeval)（[GitHub](https://github.com/confident-ai/deepeval)） | 试用（第 34 期；第 35 期未再列出） | 开源评估框架：RAG 指标、自定义指标，以及工具调用正确性、任务完成度等智能体指标 | 模块 6 |
 | [Promptfoo](https://www.thoughtworks.com/radar/languages-and-frameworks/promptfoo)（[GitHub](https://github.com/promptfoo/promptfoo)） | 试用（第 35 期新增） | 既做评估（含智能体工具调用和 CI 门禁），也做红队测试：描述应用用途、选定风险，它自动生成攻击并给回答打分，把手工试探变成每次修复后都能重跑的测试；可用来验证有状态护栏是否守得住。现属 OpenAI，仍为 MIT 许可；部分高级攻击依赖其托管服务，注意哪些数据会离开公司 | [应用路线模块 6](tracks/app-builder.md#模块-6--评估驱动的产品化第-1011-周)；[评估计划模板](templates/eval-plan.md) |
 | [Presidio](https://www.thoughtworks.com/radar/languages-and-frameworks/presidio)（[GitHub](https://github.com/data-privacy-stack/presidio)） | 试用（第 35 期新增） | 识别并脱敏文本中的个人信息（姓名、卡号、地点等），支持自定义识别器，适合在数据共享管控严格的企业里把数据交给大模型之前先脱敏；不是百分之百可靠，可能漏识或误识 | 模块 6 安全实践；[员工 AI 使用规范](templates/ai-use-policy.md) |
+| [Deep Agents](https://www.thoughtworks.com/radar/languages-and-frameworks/deep-agents)（[GitHub](https://github.com/langchain-ai/deepagents)） | 试用（第 35 期新增） | LangChain 出品的开源智能体运行框架，面向长时间任务：规划工具、子智能体分派、Skills、记忆、人工检查点、文件系统访问；有 Python 和 TypeScript 版，与 LangGraph、Langfuse 配合好 | [应用路线模块 5](tracks/app-builder.md#模块-5--智能体工具与工作流第-89-周) |
 | LangGraph | 试用（第 34 期；第 35 期未再列出） | 被移出“采用”：Thoughtworks 认为“有状态图 + 全局共享状态”不总是最好的做法，很多场景先用简单智能体、需要时再加图结构更精简 | 模块 5 |
 | Agent Development Kit（ADK） | 试用（第 34 期；第 35 期未再列出） | Google 的智能体框架，部分功能仍未正式发布；同类还有 OpenAI Agents SDK、Claude Agent SDK、Microsoft Agent Framework 等 | 模块 5 |
 | LangExtract | 试用（第 34 期；第 35 期未再列出） | 用大模型从非结构化文本中抽取结构化信息，每一项都能追溯到原文位置 | 模块 4 |
@@ -127,8 +143,8 @@ Thoughtworks 在第 35 期总结了四个主题：
 
 ## 六、怎么用这张雷达
 
-- **构建者**：选型时默认从“采用”和“试用”里挑；“评估”类只在小项目里试，并记录结论；每季度对照“谨慎”十二条自查一次。
-- **管理者**：把“谨慎”十二条变成治理问题，在季度复盘时逐条问技术负责人。例如：我们是不是在用代码行数、PR 数或 AI 代码占比衡量 AI 提效？员工自己搭的智能体流程有没有登记？智能体改动的人工审批是真审还是走过场？是不是所有任务都默认用最贵的模型？
+- **构建者**：选型时默认从“采用”和“试用”里挑；“评估”类只在小项目里试，并记录结论；每季度对照“谨慎”十四条自查一次。
+- **管理者**：把“谨慎”十四条变成治理问题，在季度复盘时逐条问技术负责人。例如：我们是不是在用代码行数、PR 数或 AI 代码占比衡量 AI 提效？员工自己搭的智能体流程有没有登记？智能体改动的人工审批是真审还是走过场？是不是所有任务都默认用最贵的模型？有没有人把 AI 的输出不看就转给同事？
 - **更新**：Thoughtworks 第 36 期（预计 2027 年春季）发布后，核对本文每个条目的分档变化，并在 [CHANGELOG](CHANGELOG.md) 记录。
 
 > 相关：[2026 AI 最佳实践](best-practices-2026.md) · [AI 合规时间线](ai-regulation-tracker.md) · [资源总表](resources.md)

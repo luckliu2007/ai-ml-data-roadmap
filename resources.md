@@ -9,7 +9,7 @@
 | 资源 | 路线 | 说明 | 语言 | 费用 |
 | --- | --- | --- | --- | --- |
 | [2026 AI 最佳实践（本仓库）](best-practices-2026.md) | 🛠️ 🧭 | 2026 技术与监管态势 + 构建者 13 条 + 管理者 11 条最佳实践 + 90 天计划 | 中 | 免费 |
-| [AI 技术雷达（本仓库）](tech-radar-2026.md) | 🛠️ 🧭 | AI 方法、工具、平台、框架的四档分级与 12 个反模式 | 中 | 免费 |
+| [AI 技术雷达（本仓库）](tech-radar-2026.md) | 🛠️ 🧭 | AI 方法、工具、平台、框架的四档分级与 14 个反模式 | 中 | 免费 |
 | [AI 合规时间线（本仓库）](ai-regulation-tracker.md) | 🧭 | 中国、欧盟、国际标准的关键日期与合规最小清单 | 中 | 免费 |
 | [Thoughtworks 技术雷达](https://www.thoughtworks.com/radar)（[第 35 期 PDF](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/11/tr_technology_radar_vol_35_en.pdf)） | 🛠️ 🧭 | 每年春秋两期，一线交付团队对技术的采用建议；第 35 期（2026-11）以运行框架工程、模型选择、多智能体并行和 AI 基础设施为主 | 英 | 免费 |
 | [Agentic AI Foundation（AAIF）](https://aaif.io/) | 🛠️ 🧭 | Linux 基金会旗下，托管 MCP、AGENTS.md、goose 等智能体开放标准（2025-12 成立） | 英 | 免费 |
