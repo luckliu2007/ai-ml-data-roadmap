@@ -56,6 +56,7 @@
 | [Agent Skills（Addy Osmani）](https://github.com/addyosmani/agent-skills)（约 11 万星） | 🛠️ | 把规格→计划→实现→测试→评审→上线的工程流程写成编程智能体的 Skills 与命令 | 英 | 免费 |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec)（[官网](https://openspec.dev/)，约 7.3 万星） | 🛠️ | 规格驱动开发（SDD）框架：先用 `/opsx:propose` 生成提案、需求与场景、设计和任务清单，再让编程智能体按清单实现并归档；支持 30+ 种 AI 编程工具，适合已有代码库 | 英 | 开源 |
 | [Awesome GitHub Copilot](https://github.com/github/awesome-copilot)（[官网](https://awesome-copilot.github.com/)，约 4 万星） | 🛠️ | GitHub 官方维护的社区合集：Copilot 自定义智能体、Instructions、Skills、Hooks 与插件，官网有 Learning Hub 教程；内容来自第三方贡献者，安装前先读其说明 | 英 | 免费 |
+| [wshobson/agents](https://github.com/wshobson/agents)（约 4.2 万星） | 🛠️ | 社区维护的编程智能体插件市场：94 个插件（202 个子智能体、185 个 Skills、105 个命令），按 Claude Code 插件格式写一次，再由适配器生成 Codex CLI、Cursor、OpenCode、GitHub Copilot 等工具的格式，CI 校验生成结果；适合参考如何组织团队插件市场，按需挑单个插件，别整套装（见技术雷达反模式“对智能体 Skill 的认知投降”） | 英 | 开源 |
 | [GitHub Spec Kit](https://github.com/github/spec-kit)（约 14 万星） | 🛠️ | GitHub 开源的规格驱动开发工具包，核心是项目“宪章”和规格 → 计划 → 任务的流程；Thoughtworks 雷达列为“评估”，团队多在已有代码库中试用 | 英 | 开源 |
 | [Superpowers](https://github.com/obra/superpowers)（约 31 万星） | 🛠️ | 由可组合 Skills 构成的编程智能体工作流（头脑风暴、写计划、测试驱动开发、代码评审等）；Thoughtworks 雷达列为“评估” | 英 | 开源 |
 | [APM – Agent Package Manager](https://github.com/microsoft/apm)（[文档](https://microsoft.github.io/apm/)，约 4 千星） | 🛠️ | 微软开源的智能体依赖管理器：在 `apm.yml` 里声明项目要用的 Skills、Instructions、插件和 MCP 服务器，`apm install` 一键配置并生成锁文件，支持 Copilot、Claude Code、Codex、Cursor、Gemini 等；适合团队统一编程智能体配置 | 英 | 开源 |
