@@ -1,5 +1,9 @@
 # 更新日志
 
+## 2026-11-06 · 雷达收录
+
+- `resources.md`：AI 编程智能体一节新增 [wshobson/agents](https://github.com/wshobson/agents)（社区插件市场，跨 Claude Code、Codex CLI、Cursor 等工具），注明按需挑选、不要整套引入
+
 ## 2026-11-06 · 技术雷达第 35 期补充
 
 - `tech-radar-2026.md`：补上 11-05 升级时受新增上限限制而没收的 16 个第 35 期 AI 条目，核实日期改为 2026-11-06
