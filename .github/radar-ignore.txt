@@ -52,3 +52,5 @@ cocoindex-io/cocoindex
 yvgude/lean-ctx
 foryourhealth111-pixel/Vibe-Skills
 pipeshub-ai/pipeshub-ai
+ruvnet/RuView
+elder-plinius/CL4R1T4S
