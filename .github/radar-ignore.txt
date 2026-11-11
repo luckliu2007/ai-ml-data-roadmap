@@ -52,3 +52,5 @@ cocoindex-io/cocoindex
 yvgude/lean-ctx
 foryourhealth111-pixel/Vibe-Skills
 pipeshub-ai/pipeshub-ai
+alchaincyf/nuwa-skill
+alchaincyf/zhangxuefeng-skill
