@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2026-11-08 · 雷达收录
+
+- `resources.md`：提示与上下文工程一节新增 [GEPA](https://github.com/gepa-ai/gepa)（反思式提示优化框架，附论文链接，注明需先有评估集和指标）
+- `.github/radar-ignore.txt`：加入 alchaincyf/nuwa-skill、alchaincyf/zhangxuefeng-skill（“蒸馏某人思维方式”的人格类 Skill，与课程模块无对应）
+
 ## 2026-11-06 · 雷达收录
 
 - `resources.md`：AI 编程智能体一节新增 [wshobson/agents](https://github.com/wshobson/agents)（社区插件市场，跨 Claude Code、Codex CLI、Cursor 等工具），注明按需挑选、不要整套引入

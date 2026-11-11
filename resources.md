@@ -44,6 +44,7 @@
 | [Anthropic: Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | 🛠️ 🧭 | 上下文工程的系统阐述 | 英 | 免费 |
 | [Prompt Engineering Guide](https://www.promptingguide.ai/)（[GitHub](https://github.com/dair-ai/Prompt-Engineering-Guide)，约 7.9 万星） | 🛠️ | 提示技巧与论文索引，含中文版 | 英 / 中 | 免费 |
 | [Learn Prompting](https://learnprompting.org/) | 🛠️ | 由浅入深的提示课程 | 英 | 部分免费 |
+| [GEPA](https://github.com/gepa-ai/gepa)（约 7.3 千星，[论文](https://arxiv.org/abs/2507.19457)） | 🛠️ | 自动优化提示的开源框架：让模型读完整执行轨迹、反思失败原因后改写提示，按评估指标保留最优版本，也能优化代码和智能体配置；已集成进 DSPy（`dspy.GEPA`）。先有评估集和指标再用 | 英 | 开源 |
 
 ## AI 编程智能体
 
