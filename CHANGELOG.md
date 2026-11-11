@@ -1,5 +1,12 @@
 # 更新日志
 
+## 2026-11-11 · 对标 GitHub 最佳实践
+
+- 新增 `CODE_OF_CONDUCT.md`（贡献者公约 3.0 中文版）、`.github/ISSUE_TEMPLATE/`（推荐资源、失效链接、内容勘误三个表单）、`.github/PULL_REQUEST_TEMPLATE.md`、`.github/dependabot.yml`、`_config.yml`（GitHub Pages）
+- `CONTRIBUTING.md`：扩写为参与方式、收录标准、写法、维护方式四节
+- `README.md`：新增英文简介、“贡献”一节和用 Fork 记录学习进度的做法；`templates/` 和 Link Check 改用绝对链接，在站点上也能打开
+- `.github/workflows/link-check.yml`：显式声明 `permissions: contents: read`
+
 ## 2026-11-08 · 雷达收录
 
 - `resources.md`：提示与上下文工程一节新增 [GEPA](https://github.com/gepa-ai/gepa)（反思式提示优化框架，附论文链接，注明需先有评估集和指标）
