@@ -8,6 +8,8 @@
 - **AI 应用 / 产品构建者**：不必从数学推导学起，但要把大模型真正用进产品和工作流，并能证明它“有效”。
 - **管理者 / 高管**：要判断 AI 在自己行业的价值在哪里、怎么选用例、怎么组织落地、怎么管住风险。
 
+> **English**: A Chinese-language AI learning roadmap with two tracks — **AI application builders** (12 weeks) and **managers / executives** (8 weeks) — plus a capability model, self-assessment, templates, a 2026 best-practice guide, an AI tech radar based on the Thoughtworks Technology Radar, and an AI regulation tracker (China / EU / international). Sources are primary and dated.
+
 > 想走算法 / 模型工程师路线（从数学、PyTorch 到从零实现 LLM），见姊妹仓库 [github-learning-resources 的 AI 分类](https://github.com/luckliu2007/github-learning-resources/blob/main/categories/06-ai-ml-data.md)。
 
 ## 为什么是这套框架
@@ -31,7 +33,7 @@
 | [tracks/leader.md](tracks/leader.md) | **管理者路线**：8 周、6 个模块、1 份 AI 战略备忘录 |
 | [self-assessment.md](self-assessment.md) | 按等级自测清单，开始前测一次、每个模块后再测 |
 | [resources.md](resources.md) | 全部资源总表（类型、语言、费用、核实日期） |
-| [templates/](templates/) | 用例画布、评估计划、模型选型评分卡、AI 试点立项书、AI 战略备忘录、智能体授权与管控清单、员工 AI 使用规范、AI 事故响应手册、每周学习记录 |
+| [templates/](https://github.com/luckliu2007/ai-ml-data-roadmap/tree/main/templates) | 用例画布、评估计划、模型选型评分卡、AI 试点立项书、AI 战略备忘录、智能体授权与管控清单、员工 AI 使用规范、AI 事故响应手册、每周学习记录 |
 
 ## 怎么开始
 
@@ -39,6 +41,7 @@
 2. 选一条路线；两条都想学，先走管理者路线（8 周）建立判断力，再走应用路线。
 3. 每周固定节奏：**3 小时学习 + 2 小时动手 + 30 分钟复盘**，用 [每周记录模板](templates/weekly-log.md)。
 4. 每个模块结束交付该模块“产出”，再进入下一个。
+5. 想留下进度记录：Fork 本仓库，在自己的副本里勾选自测清单、填写每周记录，每次提交就是一条学习记录；想收到本仓库的更新，点右上角 Watch → All Activity。
 
 ## 两条路线一览
 
@@ -58,8 +61,12 @@
 
 ## 维护
 
-- 链接由 [Link Check](.github/workflows/link-check.yml) 每周一自动检查。
+- 链接由 [Link Check](https://github.com/luckliu2007/ai-ml-data-roadmap/actions/workflows/link-check.yml) 每周一自动检查。
 - 资源每季度复核一次：是否仍在维护、是否有新版本、是否有更好的替代。变更记在 [CHANGELOG.md](CHANGELOG.md)。
+
+## 贡献
+
+欢迎推荐资料、报告失效链接、指出数字或法规条文有误。用 Issue 表单最快：[推荐资源](https://github.com/luckliu2007/ai-ml-data-roadmap/issues/new?template=resource-suggestion.yml)、[报告失效链接](https://github.com/luckliu2007/ai-ml-data-roadmap/issues/new?template=broken-link.yml)、[内容勘误](https://github.com/luckliu2007/ai-ml-data-roadmap/issues/new?template=content-error.yml)；也可以直接发 PR。收录标准见 [贡献指南](CONTRIBUTING.md)，参与前请读 [行为准则](CODE_OF_CONDUCT.md)。
 
 ## License
 

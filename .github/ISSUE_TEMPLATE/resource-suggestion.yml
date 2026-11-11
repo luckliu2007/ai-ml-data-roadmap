@@ -1,0 +1,69 @@
+name: 📚 推荐资源
+description: 推荐一份值得收录的 AI 学习资料（课程、一手文章、标准、法规原文、开源项目）
+title: "[资源推荐] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 资源名称
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 链接
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: track
+    attributes:
+      label: 适合哪条路线
+      options:
+        - 应用构建者
+        - 管理者
+        - 两条路线都适用
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 资源类型
+      options:
+        - 课程
+        - 官方文档或一手工程文章
+        - 研究报告或标准
+        - 法规原文
+        - 开源项目
+        - 模板或工具
+    validations:
+      required: true
+  - type: dropdown
+    id: lang
+    attributes:
+      label: 语言
+      options:
+        - 中文
+        - 英文
+        - 中英都有
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 推荐理由
+      description: 解决什么问题、适合什么水平、为什么比已收录的同类更值得收录。收录标准见 CONTRIBUTING.md。
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认
+      options:
+        - label: 我搜过本仓库，没有重复收录
+          required: true
+        - label: 我自己打开过这个资源，内容不是空壳或纯营销
+          required: true
+        - label: 法规、报告的数字来自官方原文，不是二手转述
+          required: true

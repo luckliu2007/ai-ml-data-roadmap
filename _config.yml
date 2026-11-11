@@ -1,0 +1,32 @@
+title: AI 学习路线：应用构建者 × 管理者
+description: AI 应用构建者与管理者两条学习路线，附最佳实践、技术雷达和合规时间线
+lang: zh-CN
+theme: minima
+
+# GitHub Pages 项目页地址：https://luckliu2007.github.io/ai-ml-data-roadmap/
+# 在仓库 Settings → Pages 里选择“Deploy from a branch”、main 分支、/ (root) 即可启用；README.md 会作为首页。
+url: "https://luckliu2007.github.io"
+baseurl: "/ai-ml-data-roadmap"
+
+# 顶部导航只放几个主要页面，否则 minima 会把每个页面都放进导航
+header_pages:
+  - best-practices-2026.md
+  - tech-radar-2026.md
+  - ai-regulation-tracker.md
+  - resources.md
+
+# 把 Markdown 里的 .md 相对链接转换成站内链接（GitHub Pages 默认已启用，此处显式声明）
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+markdown: kramdown
