@@ -56,3 +56,4 @@ alchaincyf/nuwa-skill
 alchaincyf/zhangxuefeng-skill
 ruvnet/RuView
 elder-plinius/CL4R1T4S
+loopx-project/loopx
