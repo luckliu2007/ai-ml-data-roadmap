@@ -57,3 +57,5 @@ alchaincyf/zhangxuefeng-skill
 ruvnet/RuView
 elder-plinius/CL4R1T4S
 loopx-project/loopx
+alexgreensh/token-optimizer
+JuneYaooo/rea-video
